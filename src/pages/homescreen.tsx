@@ -1,12 +1,12 @@
-import ThemeButton from "../components/Commons/themeButton/themeButton";
+import { Showcase } from "../layout";
 
 
 const HomeScreen: React.FC = () => {
 
 
     return(
-        <div>
-            <ThemeButton/>
+        <div className="w-screen h-screen">
+            <Showcase/>
         </div>
     )
 }
