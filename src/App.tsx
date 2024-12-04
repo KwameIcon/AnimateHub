@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import HomeScreen from './pages/homescreen';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <HomeScreen/>
+  }
+])
+
 
 function App() {
+
+
+  const setDarkMode = () => {
+    localStorage.theme = 'dark';
+    document.documentElement.classList.add('dark');
+  }
+
+  const setLightMode = () => {
+    localStorage.theme = 'light';
+    document.documentElement.classList.remove('dark');
+  }
+
+  useEffect(() => {
+    const theme = localStorage.getItem('theme');
+    if(theme === 'dark'){
+      document.documentElement.classList.add('dark')
+    }else{
+      document.documentElement.classList.remove('dark');
+    }
+  })
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-screen dark:bg-black dark:text-white min-h-screen flex flex-col items-center justify-center">
+      <RouterProvider router = {router}/>
     </div>
   );
 }
