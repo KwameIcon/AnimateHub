@@ -1,12 +1,20 @@
 import { Showcase } from "../layout";
 
 
-const HomeScreen: React.FC = () => {
+// component interface
+interface HomeScreenProps{
+    themeMode: string;
+    setThemeMode: React.Dispatch<React.SetStateAction<string>>;
+}
+
+
+
+const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
 
 
     return(
         <div className="w-screen h-screen">
-            <Showcase/>
+            <Showcase themeMode = {themeMode} setThemeMode = {setThemeMode}/>
         </div>
     )
 }

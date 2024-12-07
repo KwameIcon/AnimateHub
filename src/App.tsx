@@ -1,20 +1,16 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomeScreen from './pages/homescreen';
 import { ThemeButton } from './components/Commons/buttons';
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <HomeScreen/>
-  }
-])
+
 
 
 function App() {
-  
 
+  // states
+  const [themeMode, setThemeMode] = useState("system");
 
   const setDarkMode = () => {
     localStorage.theme = 'dark';
@@ -54,11 +50,20 @@ function App() {
 
 
   return (
-    <div className="w-screen dark:bg-black dark:text-white min-h-screen flex flex-col items-center justify-center relative">
-
-      <ThemeButton setDarkMode={setDarkMode} setLightMode={setLightMode} setSystemMode={setSystemMode}/>
-      <RouterProvider router = {router}/>
-    </div>
+    <Router>
+      <div className="w-screen dark:bg-black dark:text-white min-h-screen flex flex-col items-center justify-center relative">
+        <ThemeButton 
+          setDarkMode={setDarkMode} 
+          setLightMode={setLightMode} 
+          setSystemMode={setSystemMode} 
+          themeMode={themeMode} 
+          setThemeMode={setThemeMode} 
+        />
+        <Routes>
+          <Route path="/" element={<HomeScreen themeMode={themeMode} setThemeMode={setThemeMode} />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
