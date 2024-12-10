@@ -70,7 +70,7 @@ export const ThirdSlide = () => {
             <div className='absolute z-0 top-0 left-0 w-full h-full'>
                 <img src= {hero12} alt="" className='animate-fadeInSlow w-full h-full object-cover overflow-hidden' />
             </div>
-            <div className=' relative z-20 top-32 md:top-1/4 left-auto w-11/12 lg:w-6/12 extraExtraLarge:w-5/12 h-3/4 m-auto flex items-center justify-center overflow-hidden '>
+            <div className=' relative z-20 top-32 md:top-1/4 left-auto w-11/12 lg:w-7/12 extraExtraLarge:w-5/12 h-3/4 m-auto flex items-center justify-center overflow-hidden '>
                 <div className='flex flex-col items-center justify-center animate-slideInSlow'>
                     <p className=' text-3xl leading-relaxed md:text-5xl md:leading-relaxed xl:text-7xl text-center font-semibold uppercase lg:leading-relaxed xl:leading-relaxed font-Oswald lg:tracking-wider '>Unlocking limitless possibilities, today</p>
                     <div className='mt-12'>

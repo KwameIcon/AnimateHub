@@ -28,7 +28,6 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
 
     // handle sliders
     const handleSlider = (direction: string) => {
-        console.log('Direction:', direction, 'Current Slide:', currentSlide);
         if (direction === 'left') {
             setCurrentSlide((prev) => (prev > 0 ? prev - 1 : 0));
         } else {
