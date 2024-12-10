@@ -16,7 +16,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({children, className}) => {
 
 
   return (
-    <button className={`relative w-56 h-16 bg-customRed rounded-full uppercase text-white font-bold overflow-hidden group`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >
+    <button className={`relative w-48 h-14 xl:w-56 xl:h-16 bg-customRed rounded-full uppercase text-white font-bold overflow-hidden group`} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} >
       {/* Animated Background Layer */}
       {isHovered ?
         (<span className="absolute z-0 top-0 left-0 w-full h-full bg-red-800 transform translate-x-[-100%] group-hover:animate-slideInLeft"></span>)
