@@ -13,7 +13,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
 
 
     return(
-        <div className="w-screen h-screen">
+        <div className="w-screen h-auto overflow-hidden">
             <Showcase themeMode = {themeMode} setThemeMode = {setThemeMode}/>
         </div>
     )

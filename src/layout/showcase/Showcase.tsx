@@ -3,7 +3,8 @@ import Header from './header/header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FirstSlide, SecondSlide, ThirdSlide } from '../../components/sliders/showcaseSlider';
 import { useState } from 'react';
-import BgWavyLines from '../../assets/images/svg/svg files/bgWavyLines';
+
+import BgWavyLines from '../../assets/images/svg/shape-5.webp';
 
 
 
@@ -39,10 +40,10 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
 
 
     return(
-        <div className="w-full h-screen relative overflow-hidden">
+        <div className="w-full h-[700px] lg:h-screen relative overflow-hidden">
 
                 {/* bg color over */}
-            <div className='absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-t from-white dark:from-ebony/75 via-white/85 dark:via-ebonyZ/75 to-blue-100/50 dark:to-ebony/75 '/>
+            <div className='absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-t from-white dark:from-ebony/85 via-white/85 dark:via-ebonyZ/85 to-blue-100/50 dark:to-ebony/85'/>
 
             {/* header component */}
             <Header themeMode = {themeMode} setThemeMode = {setThemeMode}/>
@@ -51,14 +52,14 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
 
 
             {/* curved lines and star */}
-            <div className="absolute z-10 top-0 left-0 w-full h-full flex justify-between">
+            <div className="hidden absolute z-10 top-0 left-0 w-full h-full lg:flex justify-between">
                 <div className="h-screen relative">
                     <div className="w-[550px] h-[550px] rounded-full border border-black/50 dark:border-white/50 absolute -left-96 -top-28"></div>
-                    <FontAwesomeIcon icon={faStar} className="text-5xl absolute text-customRed dark:text-white top-1/3 left-32 animate-spin"/>
+                    <FontAwesomeIcon icon={faStar} className="text-5xl absolute text-customRed dark:text-white top-1/3 extraExtraLarge:top-60 left-32 extraExtraLarge:left-28 animate-spin"/>
                 </div>
-                <div className="h-screen relative">
+                <div className="h-screen relative extraExtraLarge:-mt-[28rem]">
                     <div className="w-[550px] h-[550px] rounded-full border border-black/50 dark:border-white/50 absolute -right-96 -bottom-28"></div>
-                    <FontAwesomeIcon icon={faStar} className="text-5xl absolute text-customRed dark:text-white top-2/3 right-[137px] animate-spin"/>
+                    <FontAwesomeIcon icon={faStar} className="text-5xl absolute text-customRed dark:text-white top-2/3 extraExtraLarge:top-full right-[137px] extraExtraLarge:right-16 animate-spin"/>
                 </div>
             </div>
 
@@ -69,7 +70,7 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
                 {Sliders[currentSlide]}
 
                 {/* slider controllers */}
-                <div className='absolute z-10 top-2/4 right-16 -mt-10 flex flex-col space-y-3'>
+                <div className='hidden absolute z-10 top-2/4 right-16 -mt-10 lg:flex flex-col space-y-3  extraExtraLarge:w-1/5 extraExtraLarge:right-0'>
                     <div className='w-16 h-16 rounded-full bg-ebony hover:bg-customRed flex items-center justify-center cursor-pointer' onClick={() => handleSlider('left')}>
                         <div className='h-full flex items-center justify-center'>
                             <span className=' -mt-customMargin -mr-2 text-xl text-white'>{'<'}</span>
@@ -86,9 +87,9 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
             </div>
 
 
-            {/* test svg */}
-            <div className='absolute top-3/4 left-0 w-screen h-2/4 flex items-end'>
-                <BgWavyLines className='w-screen rotate-[350deg] -ml-20 dark:opacity-50'/>
+            {/* svg */}
+            <div className='hidden absolute -bottom-12 extraExtraLarge:-bottom-5 left-0 z-10 w-screen lg:flex items-end opacity-70 extraExtraLarge:opacity-100 '>
+                <img src= {BgWavyLines} alt="" />
             </div>
 
         </div>

@@ -35,6 +35,13 @@ module.exports = {
       strokeWidth: {
         thin: '0.5px'
       },
+      maxHeight: {
+        '500px': '500px',
+      },
+      screens: {
+        laptop: '1024px',
+        extraExtraLarge: '2000px',
+      },
       keyframes: {
         fadeIn: {
           '0%': {opacity:0, scale: 0},
@@ -46,8 +53,8 @@ module.exports = {
           '100%': {opacity:1, scale: 1}
         },
         fadeOut: {
-          '100%': {opacity:1, scale: 1},
-          '0%': {opacity:0, scale: 0}
+          '0%': { transform: 'translateX(0)', opacity: 1 },
+          '100%': { transform: 'translateX(-100%)', opacity: 0 },
         },
         slideIn: {
           '0%': {transform: 'translateY(-100%)'},
@@ -69,13 +76,11 @@ module.exports = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(100%)' },
         },
-        
-
       },
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
         fadeInSlow: 'fadeInSlow 5s ease-in-out',
-        fadeOut: 'fadeOut 0.3s ease-in-out',
+        fadeOut: 'fadeOut 2s ease-out 1s forwards',
         slideIn: 'slideIn 0.5s ease-in-out',
         slideInSlow: 'slideInSlow 1s ease-in',
         spin: 'spin 30s linear infinite',
@@ -84,6 +89,15 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function({addUtilities}) {
+      addUtilities({
+        '.scrollbar-none' : {
+          'scrollbar-width': 'none',
+          '-ms-overflow-style': 'none',
+        }
+      })
+    }
+  ],
 }
 

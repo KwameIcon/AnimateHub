@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavButtons } from "../../../components/Commons/buttons";
 import { Logo } from "../../../components/Commons/logo";
-import { faCommentDots} from "@fortawesome/free-regular-svg-icons";
 
 
 
@@ -16,24 +14,12 @@ interface HeaderProps{
 const Header: React.FC<HeaderProps> = ({themeMode, setThemeMode}) => {
 
     return(
-        <div className="w-full h-28 relative z-20 flex items-center justify-between px-10">
+        <div className="w-full m-auto extraExtraLarge:w-6/12 extraExtraLarge:6/12 h-16 lg:h-28 extraExtraLarge:h-44 relative z-50 flex items-center justify-between px-3 border-b-4 border-white/45 lg:border-none md:p-8 md:pb-10 lg:px-10 bg-white dark:bg-black lg:bg-transparent lg:dark:bg-transparent">
             {/* logo component */}
             <Logo themeMode = {themeMode} setThemeMode = {setThemeMode}/>
 
             {/* navigation buttons component */}
             <NavButtons/>
-
-            {/* contact */}
-            <div className="flex items-center justify-start space-x-4">
-                <div className=" w-14 h-14 flex items-center justify-center relative">
-                    <FontAwesomeIcon icon = {faCommentDots} className="text-3xl absolute top-0 z-0 "/>
-                    <FontAwesomeIcon icon = {faCommentDots} className="text-3xl absolute top-5 z-20 rotate-customRotate"/>
-                </div>
-                <div className="flex flex-col items-start justify-center">
-                    <span className="">Need Help?</span>
-                    <span className="text-xl font-extrabold tracking-tight font-Oswald">[233] 558-465-569</span>
-                </div>
-            </div>
         </div>
     )
 }

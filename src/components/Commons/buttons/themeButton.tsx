@@ -65,7 +65,7 @@ const ThemeButton: React.FC<ThemeButtonProps> = ({ setDarkMode, setLightMode, se
 
 
   return (
-    <div className={`${theme ? 'absolute w-screen h-screen top-0 left-0 bg-transparent z-20' : ''}`} ref={mainContainerRef}>
+    <div className={`${theme ? 'absolute w-screen h-screen top-0 left-0 bg-transparent z-50' : ''}`} ref={mainContainerRef}>
       <div className={`fixed z-30 top-2/4 right-0 ${className}`}>
         <div className="relative">
           <MiniUtilityCard className="absolute right-1 mr-2 cursor-pointer" onClick={() => setTheme((prev) => !prev)} buttonContainerRef={buttonContainerRef} >
