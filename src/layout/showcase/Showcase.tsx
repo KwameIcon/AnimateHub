@@ -40,10 +40,10 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
 
 
     return(
-        <div className="w-full h-[700px] lg:h-screen relative overflow-hidden">
+        <div className="w-full min-h-screen relative overflow-hidden">
 
                 {/* bg color over */}
-            <div className='absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-t from-white dark:from-ebony/85 via-white/85 dark:via-ebonyZ/85 to-blue-100/50 dark:to-ebony/85'/>
+            <div className='absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-t from-white dark:from-ebony via-white/85 dark:via-ebonyZ/90 to-blue-100/50 dark:to-ebony/80'/>
 
             {/* header component */}
             <Header themeMode = {themeMode} setThemeMode = {setThemeMode}/>
@@ -70,7 +70,7 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
                 {Sliders[currentSlide]}
 
                 {/* slider controllers */}
-                <div className='hidden absolute z-10 top-2/4 right-16 -mt-10 lg:flex flex-col space-y-3  extraExtraLarge:w-1/5 extraExtraLarge:right-0'>
+                <div className='hidden absolute z-20 top-2/4 right-20 -mt-12 lg:flex flex-col space-y-3  extraExtraLarge:w-96 extraExtraLarge:right-0'>
                     <div className='w-16 h-16 rounded-full bg-ebony hover:bg-customRed flex items-center justify-center cursor-pointer' onClick={() => handleSlider('left')}>
                         <div className='h-full flex items-center justify-center'>
                             <span className=' -mt-customMargin -mr-2 text-xl text-white'>{'<'}</span>
@@ -88,7 +88,7 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
 
 
             {/* svg */}
-            <div className='hidden absolute -bottom-12 extraExtraLarge:-bottom-5 left-0 z-10 w-screen lg:flex items-end opacity-70 extraExtraLarge:opacity-100 '>
+            <div className='hidden absolute -bottom-2 left-0 z-10 w-screen lg:flex items-end'>
                 <img src= {BgWavyLines} alt="" />
             </div>
 

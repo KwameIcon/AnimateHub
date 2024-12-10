@@ -51,7 +51,7 @@ function App() {
 
   return (
     <Router>
-      <div className="w-screen dark:bg-black dark:text-white min-h-screen flex flex-col items-center justify-start relative overflow-x-hidden scrollbar-none">
+      <main className="w-screen dark:bg-ebony dark:text-white min-h-screen flex flex-col items-center justify-start relative overflow-x-hidden scrollbar-none">
         <ThemeButton 
           setDarkMode={setDarkMode} 
           setLightMode={setLightMode} 
@@ -62,7 +62,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen themeMode={themeMode} setThemeMode={setThemeMode} />} />
         </Routes>
-      </div>
+      </main>
     </Router>
   );
 }

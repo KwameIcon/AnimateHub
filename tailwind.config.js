@@ -40,6 +40,7 @@ module.exports = {
       },
       screens: {
         laptop: '1024px',
+        '1280': '1280px',
         extraExtraLarge: '2000px',
       },
       keyframes: {
@@ -95,9 +96,9 @@ module.exports = {
         '.scrollbar-none' : {
           'scrollbar-width': 'none',
           '-ms-overflow-style': 'none',
-        }
+        },
       })
-    }
+    },
   ],
 }
 
