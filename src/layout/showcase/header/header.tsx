@@ -1,27 +1,45 @@
+import { useEffect, useState } from "react";
 import { NavButtons } from "../../../components/Commons/buttons";
 import { Logo } from "../../../components/Commons/logo";
 
-
-
-// component interface
-interface HeaderProps{
-    themeMode: string;
-    setThemeMode: React.Dispatch<React.SetStateAction<string>>;
+// Component interface
+interface HeaderProps {
+  themeMode: string;
+  setThemeMode: React.Dispatch<React.SetStateAction<string>>;
 }
 
+const Header: React.FC<HeaderProps> = ({ themeMode, setThemeMode }) => {
+  const [isFixed, setIsFixed] = useState(false);
 
+  const handleHeaderFixedOnScroll = () => {
+    const scrollLimit = 50;
+    setIsFixed(window.scrollY > scrollLimit);
+  };
 
-const Header: React.FC<HeaderProps> = ({themeMode, setThemeMode}) => {
+  useEffect(() => {
+    window.addEventListener("scroll", handleHeaderFixedOnScroll);
+    return () => {
+      window.removeEventListener("scroll", handleHeaderFixedOnScroll);
+    };
+  }, []);
 
-    return(
-        <div className="w-full m-auto extraExtraLarge:w-6/12 extraExtraLarge:6/12 h-16 lg:h-28 extraExtraLarge:h-44 relative z-50 flex items-center justify-between px-3 border-b-4 border-white/45 lg:border-none md:p-8 md:pb-10 lg:px-10 bg-white dark:bg-black lg:bg-transparent lg:dark:bg-transparent">
-            {/* logo component */}
-            <Logo themeMode = {themeMode} setThemeMode = {setThemeMode}/>
+  return (
+    <header
+      className={`w-full fixed top-0 left-0 extraExtraLarge:left-[20%] z-50 extraExtraLarge:w-3/5 transition-all duration-300 ${
+        isFixed
+          ? "bg-white dark:bg-ebony shadow-lg shadow-customRed/30"
+          : "bg-transparent lg:bg-transparent lg:dark:bg-transparent"
+      } `}
+    >
+      <div className="flex items-center justify-between h-16 lg:h-28 extraExtraLarge:h-44 px-3 md:p-8 md:pb-10 lg:px-10 border-b-4 border-white/45 lg:border-none">
+        {/* Logo Component */}
+        <Logo themeMode={themeMode} setThemeMode={setThemeMode} />
 
-            {/* navigation buttons component */}
-            <NavButtons/>
-        </div>
-    )
-}
+        {/* Navigation Buttons Component */}
+        <NavButtons />
+      </div>
+    </header>
+  );
+};
 
 export default Header;

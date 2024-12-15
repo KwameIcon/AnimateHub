@@ -61,6 +61,10 @@ module.exports = {
           '0%': {transform: 'translateY(-100%)'},
           '100%': {transform: 'translateY(0)'}
         },
+        slideFromBottom: {
+          '0%': {transform: 'translateY(30px)'},
+          '100%': {transform: 'translateY(0)'}
+        },
         slideInSlow: {
           '0%': {transform: 'translateY(-30%)', opacity: '0'},
           '100%': {transform: 'translateY(0)', opacity: '1'}
@@ -69,14 +73,11 @@ module.exports = {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
         },
-        slideInLeft: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' },
-        },
-        slideOutRight: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(100%)' },
-        },
+        swing: {
+          '0%':{transform: 'translateX(0)'},
+          '50%':{transform: 'translateX(20px)'},
+          '100%':{transform: 'translateX(-20px)'}
+        }
       },
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
@@ -84,9 +85,9 @@ module.exports = {
         fadeOut: 'fadeOut 2s ease-out 1s forwards',
         slideIn: 'slideIn 0.5s ease-in-out',
         slideInSlow: 'slideInSlow 1s ease-in',
+        slideFromBottom: 'slideFromBottom 1s ease-in',
         spin: 'spin 30s linear infinite',
-        slideInLeft: 'slideInLeft 0.3s ease-in-out forwards',
-        slideOutRight: 'slideOutRight 0.3s ease-in-out forwards',
+        swing: 'swing 3s linear infinite alternate'
       }
     },
   },
