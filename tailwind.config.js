@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'Oswald': 'Oswald',
+        'BebasNeue': 'Bebas Neue',
         varuna: [
           'varuna', "sans-serif"
         ]

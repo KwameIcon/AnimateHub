@@ -1,4 +1,4 @@
-import { ClientTestimonials, KeyOffers, PriceActionLayout, Showcase } from "../layout";
+import { ClientTestimonials, Footer, KeyOffers, PriceActionLayout, Showcase } from "../layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faPlus, faUser } from "@fortawesome/free-solid-svg-icons";
 import { BackToTop } from "../components/Commons/backToTop";
@@ -387,6 +387,12 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+
+            {/* footer */}
+            <div className="w-full extraExtraLarge:w-3/5 m-auto">
+                <Footer themeMode= {themeMode}/>
             </div>
         </section>
     )

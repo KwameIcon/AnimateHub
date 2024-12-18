@@ -33,7 +33,7 @@ const Header: React.FC<HeaderProps> = ({ themeMode, setThemeMode }) => {
     >
       <div className="flex items-center justify-between h-16 lg:h-28 extraExtraLarge:h-44 px-3 md:p-8 md:pb-10 lg:px-10 border-b-4 border-white/45 lg:border-none">
         {/* Logo Component */}
-        <Logo themeMode={themeMode} setThemeMode={setThemeMode} />
+        <Logo themeMode={themeMode}/>
 
         {/* Navigation Buttons Component */}
         <NavButtons />

@@ -8,13 +8,12 @@ import darkLogo from '../../../assets/images/logo/logo1.webp'
 
 // component interface
 interface LogoProps{
-    themeMode: string;
-    setThemeMode: React.Dispatch<React.SetStateAction<string>>;
+  themeMode: string;
 }
 
 
 
-const Logo: React.FC<LogoProps> = ({ themeMode, setThemeMode }) => {
+const Logo: React.FC<LogoProps> = ({ themeMode }) => {
   return (
     <div className="relative overflow-hidden">
       <div className="absolute z-0 top-0 left-0 w-full h-full bg-gradient-to-r from-red-700/50 via-red-400/50 to-gray-100/50 animate-fadeOut"/>
