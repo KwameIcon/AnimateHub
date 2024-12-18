@@ -1,4 +1,4 @@
-import { ClientTestimonials, KeyOffers, Showcase } from "../layout";
+import { ClientTestimonials, KeyOffers, PriceActionLayout, Showcase } from "../layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { BackToTop } from "../components/Commons/backToTop";
@@ -6,6 +6,7 @@ import { Card, PortfolioCard } from "../components/Commons/cards";
 import { useEffect } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import ActiveMembers from "../layout/activeMembers/activeMembers";
 
 // animate
 import Aos from "aos";
@@ -18,11 +19,10 @@ import About3 from '../assets/images/others/about-2.webp';
 import About4 from '../assets/images/others/about-3.webp';
 import About5 from '../assets/images/others/about-4.webp';
 import bgSketch from '../assets/images/others/pattern-1 (1).webp'
-// portfolio image
 import P1 from '../assets/images/portfolio/1.webp'
-import P2 from '../assets/images/portfolio/2.webp'
-import P3 from '../assets/images/portfolio/3.webp'
-import P4 from '../assets/images/portfolio/4.webp'
+import SectionHalfBg from '../assets/images/others/section-half-bg-1.webp'
+import { ContactUs } from "../components/contactUs";
+
 
 
 // component interface
@@ -218,6 +218,38 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
 
             {/* clients testimoniasl */}
             <ClientTestimonials/>
+
+
+
+            {/* pricing */}
+            <div className="w-full xl:w-11/12 m-auto extraExtraLarge:w-3/5 mt-20 flex flex-col items-center justify-center p-5">
+
+                {/* header text */}
+                <div className="w-full pl-3 md:pl-0 md:px-2 flex flex-wrap items-center justify-center" data-aos="fade-up">
+                    <div className="flex flex-col items-center justify-center space-y-5">
+                        <h3 className="text-lg uppercase font-bold text-customRed font-Oswald tracking-widest">pricing action</h3>
+                        <h1 className="text-3xl md:text-4xl capitalize leading-[3rem] md:leading-[4rem] lg:leading-[4rem] md:w-4/5 font-bold font-Oswald dark:text-white text-center">innovating for a better tomorrow</h1>
+                    </div>
+                </div>
+
+                {/* price cards */}
+                <PriceActionLayout/>
+            </div>
+
+
+            {/* active members */}
+            <ActiveMembers/>
+
+
+            {/*talk to us*/}
+            <div className="w-screen extraExtraLarge:w-3/5 m-auto my-20 h-[48rem] md:h-[50rem] xl:h-[48rem] relative">
+                <div className="w-full md:w-7/12 h-full overflow-hidden relative z-0 md:border md:border-customRed md:border-opacity-10 lg:border-none">
+                    <img src= {SectionHalfBg} alt="" className="w-full h-full object-cover" />
+                </div>
+                <div>
+                    <ContactUs/>
+                </div>
+            </div>
         </section>
     )
 }

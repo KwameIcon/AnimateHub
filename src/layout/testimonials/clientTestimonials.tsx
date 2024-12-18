@@ -24,10 +24,12 @@ const ClientTestimonials: React.FC = () => {
 
     const [direction, setDirection] = useState('');
     const divRef = useRef<HTMLUListElement>(null);
+    const [progress , setProgress] = useState(10);
 
 
     useEffect(() => {
     if (divRef.current && direction) {
+
 
         const isMobile = window.innerWidth <= 480;
         const scrollAmount = isMobile ? 350 : 700;
@@ -36,6 +38,12 @@ const ClientTestimonials: React.FC = () => {
             left: direction === 'left' ? -scrollAmount : scrollAmount,
             behavior: 'smooth',
         });
+
+                
+        const { scrollLeft, scrollWidth, clientWidth } = divRef.current;
+        const scrollableWidth = scrollWidth - clientWidth;
+        const currentProgress = (scrollLeft / scrollableWidth) * 100;
+        setProgress(currentProgress);
 
         setTimeout(() => setDirection(''), 300);
     }
@@ -52,7 +60,7 @@ const ClientTestimonials: React.FC = () => {
             <div className="w-full pl-3 md:pl-0 md:px-2 flex flex-wrap items-end justify-between">
                 <div className="flex flex-col space-y-5">
                     <h3 className="uppercase font-bold text-customRed font-Oswald tracking-widest">clients testimonials</h3>
-                    <h1 className="text-3xl md:text-5xl capitalize leading-[3rem] md:leading-[4rem] lg:leading-[4rem] md:w-4/5 font-bold font-Oswald dark:text-white">your IT partner for a dynamic future</h1>
+                    <h1 className="text-3xl md:text-4xl capitalize leading-[3rem] md:leading-[4rem] lg:leading-[4rem] md:w-4/5 font-bold font-Oswald dark:text-white">your IT partner for a dynamic future</h1>
                 </div>
                 {/* carousel button */}
                 <div className=" mt-10 md:mt-0 lg:mr-10">
@@ -208,6 +216,17 @@ const ClientTestimonials: React.FC = () => {
                     </div>
                 </Card>
             </CarouselContainer>
+
+
+            {/* progressive bar */}
+            {/* Progress Bar */}
+            <div className="relative w-5/6 lg:w-1/5 m-auto h-3 mt-16 bg-gray-700 rounded-full">
+                <div
+                    className="absolute h-3 bg-customRed transition-all duration-150 rounded-full"
+                    style={{ width: `${progress}%` }}
+                />
+            </div>
+
 
         </section>
     )
