@@ -3,7 +3,6 @@
 import Hero from '../../assets/images/people/hero-1.jpg'
 import hero1 from '../../assets/images/people/download.jpeg'
 import hero12 from '../../assets/images/people/hero-12.jpeg'
-import { PrimaryButton } from '../Commons/buttons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
