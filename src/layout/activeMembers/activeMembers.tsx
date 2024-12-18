@@ -96,7 +96,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
 
                         <div className='absolute z-0 bottom-2 w-14 h-14 rounded bg-customRed left-[10%] flex items-center justify-center group'>
-                            <div className='absolute -top-40 left-5 flex flex-col space-y-6'>
+                            <div className='absolute -top-40 left-5 flex flex-col space-y-6 text-white'>
                                 <FontAwesomeIcon icon={faFacebook} className='md:hidden group-hover:block group-hover:animate-slideInSlow'/>
                                 <FontAwesomeIcon icon={faTwitter} className='md:hidden group-hover:block group-hover:animate-fadeIn'/>
                                 <FontAwesomeIcon icon={faLinkedin} className='md:hidden group-hover:block group-hover:animate-slideIn'/>
@@ -125,7 +125,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
 
                         <div className='absolute z-0 bottom-2 w-14 h-14 rounded bg-customRed left-[10%] flex items-center justify-center group'>
-                            <div className='absolute -top-40 left-5 flex flex-col space-y-6'>
+                            <div className='absolute -top-40 left-5 flex flex-col space-y-6 text-white'>
                                 <FontAwesomeIcon icon={faFacebook} className='md:hidden group-hover:block group-hover:animate-slideInSlow'/>
                                 <FontAwesomeIcon icon={faTwitter} className='md:hidden group-hover:block group-hover:animate-fadeIn'/>
                                 <FontAwesomeIcon icon={faLinkedin} className='md:hidden group-hover:block group-hover:animate-slideIn'/>
@@ -154,7 +154,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
 
                         <div className='absolute z-0 bottom-2 w-14 h-14 rounded bg-customRed left-[10%] flex items-center justify-center group'>
-                            <div className='absolute -top-40 left-5 flex flex-col space-y-6'>
+                            <div className='absolute -top-40 left-5 flex flex-col space-y-6 text-white'>
                                 <FontAwesomeIcon icon={faFacebook} className='md:hidden group-hover:block group-hover:animate-slideInSlow'/>
                                 <FontAwesomeIcon icon={faTwitter} className='md:hidden group-hover:block group-hover:animate-fadeIn'/>
                                 <FontAwesomeIcon icon={faLinkedin} className='md:hidden group-hover:block group-hover:animate-slideIn'/>
@@ -183,7 +183,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
 
                         <div className='absolute z-0 bottom-2 w-14 h-14 rounded bg-customRed left-[10%] flex items-center justify-center group'>
-                            <div className='absolute -top-40 left-5 flex flex-col space-y-6'>
+                            <div className='absolute -top-40 left-5 flex flex-col space-y-6 text-white'>
                                 <FontAwesomeIcon icon={faFacebook} className='md:hidden group-hover:block group-hover:animate-slideInSlow'/>
                                 <FontAwesomeIcon icon={faTwitter} className='md:hidden group-hover:block group-hover:animate-fadeIn'/>
                                 <FontAwesomeIcon icon={faLinkedin} className='md:hidden group-hover:block group-hover:animate-slideIn'/>
@@ -212,7 +212,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
 
                         <div className='absolute z-0 bottom-2 w-14 h-14 rounded bg-customRed left-[10%] flex items-center justify-center group'>
-                            <div className='absolute -top-40 left-5 flex flex-col space-y-6'>
+                            <div className='absolute -top-40 left-5 flex flex-col space-y-6 text-white'>
                                 <FontAwesomeIcon icon={faFacebook} className='md:hidden group-hover:block group-hover:animate-slideInSlow'/>
                                 <FontAwesomeIcon icon={faTwitter} className='md:hidden group-hover:block group-hover:animate-fadeIn'/>
                                 <FontAwesomeIcon icon={faLinkedin} className='md:hidden group-hover:block group-hover:animate-slideIn'/>
@@ -241,7 +241,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
 
                         <div className='absolute z-0 bottom-2 w-14 h-14 rounded bg-customRed left-[10%] flex items-center justify-center group'>
-                            <div className='absolute -top-40 left-5 flex flex-col space-y-6'>
+                            <div className='absolute -top-40 left-5 flex flex-col space-y-6 text-white'>
                                 <FontAwesomeIcon icon={faFacebook} className='md:hidden group-hover:block group-hover:animate-slideInSlow'/>
                                 <FontAwesomeIcon icon={faTwitter} className='md:hidden group-hover:block group-hover:animate-fadeIn'/>
                                 <FontAwesomeIcon icon={faLinkedin} className='md:hidden group-hover:block group-hover:animate-slideIn'/>

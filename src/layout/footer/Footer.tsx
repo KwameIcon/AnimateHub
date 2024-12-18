@@ -10,6 +10,13 @@ import BlogSm2 from '../../assets/images/others/blog-sm-2.webp'
 
 
 
+// animation
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
+
+
+
 
 interface FooterProps{
     themeMode: string;
@@ -21,12 +28,20 @@ interface FooterProps{
 
 const Footer:React.FC<FooterProps> = ({themeMode}) => {
 
+
+
+    useEffect(() => {
+        Aos.init({duration: 2000})
+    })
+
+
+
     return(
         <section className="w-full h-auto xl:px-10 mt-10 flex flex-col p-5 xl:p-0 ">
             {/* first content */}
             <div className="w-full h-auto flex flex-wrap items-start justify-between space-y-8 md:gap-2">
                 {/* logo social media links */}
-                <div className="w-full md:w-[18rem] flex flex-col items-start space-y-5">
+                <div className="w-full md:w-[18rem] flex flex-col items-start space-y-5" data-aos = "fade-up" data-aos-delay = "0">
                     <div>
                         <Logo themeMode= {themeMode}/>
                     </div>
@@ -42,7 +57,7 @@ const Footer:React.FC<FooterProps> = ({themeMode}) => {
                 </div>
 
                 {/* get free links */}
-                <div className="w-full md:w-[18rem] flex flex-col items-start space-y-5">
+                <div className="w-full md:w-[18rem] flex flex-col items-start space-y-5" data-aos = "fade-up" data-aos-delay = "200">
                     <h2 className="capitalize tracking-widest text-xl font-BebasNeue font-bold">get free link</h2>
                     <ul className="w-full flex flex-col items-start space-y-5">
                         <li className="flex items-center justify-start space-x-2 cursor-pointer dark:text-white dark:text-opacity-65 text-black text-opacity-65 dark:hover:text-opacity-85 hover:text-opacity-85">
@@ -73,7 +88,7 @@ const Footer:React.FC<FooterProps> = ({themeMode}) => {
                 </div>
 
                 {/* address */}
-                <div className="w-full md:w-[18rem] flex flex-col items-start space-y-5">
+                <div className="w-full md:w-[18rem] flex flex-col items-start space-y-5" data-aos = "fade-up" data-aos-delay = "400">
                     <h2 className="capitalize tracking-widest text-xl font-BebasNeue font-bold">Address</h2>
                     <ul className="w-full flex flex-col items-start space-y-5 dark:text-white dark:text-opacity-65 text-black text-opacity-65">
                         <li className="flex items-center justify-start space-x-3">
@@ -107,7 +122,7 @@ const Footer:React.FC<FooterProps> = ({themeMode}) => {
                 </div>
 
                 {/* blogs */}
-                <div className="w-full md:w-[18rem] flex flex-col items-start space-y-5">
+                <div className="w-full md:w-[18rem] flex flex-col items-start space-y-5" data-aos = "fade-up" data-aos-delay = "600">
                     <h2 className="capitalize tracking-widest text-xl font-BebasNeue font-bold">recent blog</h2>
                     <ul className="w-full flex flex-col items-start space-y-3 dark:text-white dark:text-opacity-65 text-black text-opacity-65">
                         <li className="flex items-center justify-start space-x-5 cursor-pointer">
@@ -138,7 +153,7 @@ const Footer:React.FC<FooterProps> = ({themeMode}) => {
                 </div>
             </div>
             {/* horizontal rule */}
-            <hr className="opacity-25 my-10" />
+            <hr className="dark:opacity-25 my-10" />
 
             <div className="w-full flex flex-wrap items-center justify-between pb-10 space-y-10 md:space-y-0">
                 <div className="dark:text-white dark:text-opacity-70 text-black text-opacity-70">

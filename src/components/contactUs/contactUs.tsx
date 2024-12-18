@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const ContactUs:React.FC = () => {
 
     return(
-        <div className="absolute z-10 top-12 w-11/12 md:w-5/12 bg-white dark:bg-graphiteBlack rounded m-auto left-5 md:left-[50%] py-10 px-2 lg:px-10 overflow-hidden flex flex-col items-center justify-center space-y-10">
+        <div className="absolute z-10 top-12 w-11/12 md:w-5/12 bg-white dark:bg-graphiteBlack rounded m-auto left-5 md:left-[50%] py-10 px-2 lg:px-10 overflow-hidden flex flex-col items-center justify-center space-y-10 shadow">
 
             {/* header text */}
             <div className="w-full pl-3 md:pl-0 md:px-2 mb-7 md:mb-0 flex flex-wrap items-end justify-between">

@@ -279,14 +279,14 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
 
                         <div className="relative z-10 w-full h-full flex flex-col justify-between p-10">
                             <div className="w-full">
-                                <div className="w-20 h-20 bg-ebony transition-colors duration-300 ease-in-out group-hover:bg-customRed flex flex-col items-center justify-center text-2xl font-bold rounded">
+                                <div className="w-20 h-20 bg-ebony text-white transition-colors duration-300 ease-in-out group-hover:bg-customRed flex flex-col items-center justify-center text-2xl font-bold rounded">
                                     <p>30</p>
                                     <p>May</p>
                                 </div>
                             </div>
 
                             <div className="w-full flex flex-col items-start justify-center space-y-5">
-                                <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-1 text-white text-opacity-70">
+                                <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-1 text-white text-opacity-70 xl:w-10/12">
                                     <p className="flex gap-2 items-center">
                                         <FontAwesomeIcon icon = {faUser}/>
                                         <span>By Adim</span>
@@ -297,10 +297,10 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
                                     </p>
                                 </div>
                                 
-                                <p className="text-lg">We implement state-of-the-art encryption</p>
+                                <p className="text-lg text-white font-semibold">We implement state-of-the-art encryption</p>
 
                                 <button className="flex gap-2 items-center uppercase font-bold">
-                                    <span className="transition-colors duration-300 ease-in-out hover:text-customRed">read more</span>
+                                    <span className="transition-colors duration-300 ease-in-out hover:text-customRed text-white">read more</span>
                                     <FontAwesomeIcon icon={faArrowRight} className="text-customRed"/>
                                 </button>
                             </div>
@@ -319,14 +319,14 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
 
                         <div className="relative z-10 w-full h-full flex flex-col justify-between p-10">
                             <div className="w-full">
-                                <div className="w-20 h-20 bg-ebony transition-colors duration-300 ease-in-out group-hover:bg-customRed flex flex-col items-center justify-center text-2xl font-bold rounded">
+                                <div className="w-20 h-20 bg-ebony text-white transition-colors duration-300 ease-in-out group-hover:bg-customRed flex flex-col items-center justify-center text-2xl font-bold rounded">
                                     <p>30</p>
                                     <p>May</p>
                                 </div>
                             </div>
 
                             <div className="w-full flex flex-col items-start justify-center space-y-5">
-                                <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-1 text-white text-opacity-70">
+                                <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-1 text-white text-opacity-70 xl:w-10/12">
                                     <p className="flex gap-2 items-center">
                                         <FontAwesomeIcon icon = {faUser}/>
                                         <span>By Adim</span>
@@ -337,10 +337,10 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
                                     </p>
                                 </div>
                                 
-                                <p className="text-lg">We implement state-of-the-art encryption</p>
+                                <p className="text-lg text-white font-semibold">We implement state-of-the-art encryption</p>
 
                                 <button className="flex gap-2 items-center uppercase font-bold">
-                                    <span className="transition-colors duration-300 ease-in-out hover:text-customRed">read more</span>
+                                    <span className="transition-colors duration-300 ease-in-out hover:text-customRed text-white">read more</span>
                                     <FontAwesomeIcon icon={faArrowRight} className="text-customRed"/>
                                 </button>
                             </div>
@@ -359,14 +359,14 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
 
                         <div className="relative z-10 w-full h-full flex flex-col justify-between p-10">
                             <div className="w-full">
-                                <div className="w-20 h-20 bg-ebony transition-colors duration-300 ease-in-out group-hover:bg-customRed flex flex-col items-center justify-center text-2xl font-bold rounded">
+                                <div className="w-20 h-20 bg-ebony text-white transition-colors duration-300 ease-in-out group-hover:bg-customRed flex flex-col items-center justify-center text-2xl font-bold rounded">
                                     <p>30</p>
                                     <p>May</p>
                                 </div>
                             </div>
 
                             <div className="w-full flex flex-col items-start justify-center space-y-5">
-                                <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-1 text-white text-opacity-70">
+                                <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between gap-1 text-white text-opacity-70 xl:w-10/12">
                                     <p className="flex gap-2 items-center">
                                         <FontAwesomeIcon icon = {faUser}/>
                                         <span>By Adim</span>
@@ -377,10 +377,10 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
                                     </p>
                                 </div>
                                 
-                                <p className="text-lg">We implement state-of-the-art encryption</p>
+                                <p className="text-lg text-white font-semibold">We implement state-of-the-art encryption</p>
 
                                 <button className="flex gap-2 items-center uppercase font-bold">
-                                    <span className="transition-colors duration-300 ease-in-out hover:text-customRed">read more</span>
+                                    <span className="transition-colors duration-300 ease-in-out hover:text-customRed text-white">read more</span>
                                     <FontAwesomeIcon icon={faArrowRight} className="text-customRed"/>
                                 </button>
                             </div>
