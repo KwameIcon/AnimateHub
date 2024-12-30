@@ -4,7 +4,7 @@ import { faArrowRightLong, faEnvelope, faLocationDot, faPaperPlane, faPhone, faS
 import SecondaryButton from "../../../components/Commons/buttons/secondaryButton";
 import Logo from '../../../assets/images/logo/logo.webp'
 import SearchCard from "../../../components/Commons/SearchCard/SearchCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SidebarSlider from "../../sidebarSlider/SidebarSlider";
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
 
@@ -19,8 +19,9 @@ interface HeaderProps{
 const SecondaryHeader: React.FC<HeaderProps> = ({themeMode}) => {
     // states
     const [isSearchOpen, setIsSearchOpen] = useState(false);
-    const [isSliderOpen, setIsSliderOpen] = useState(false);
+    const [isHeaderFixed, setIsHeaderFixed] = useState(false);
     // slider states
+    const [isSliderOpen, setIsSliderOpen] = useState(false);
     const [isNameClicked, setIsNameClicked] = useState(false);
     const [isEmailClicked, setIsEmailClicked] = useState(false);
     const [isSubjectClicked, setIsSubjectClicked] = useState(false);
@@ -28,8 +29,23 @@ const SecondaryHeader: React.FC<HeaderProps> = ({themeMode}) => {
 
 
 
+    // check scroll height
+    const checkScrollHeight = () => {
+        setIsHeaderFixed(window.scrollY > 400);
+    }
+
+
+    // scrolling effect handler
+    useEffect(() => {
+        checkScrollHeight();
+        window.addEventListener('scroll', checkScrollHeight);
+        return(() => { window.removeEventListener('scroll', checkScrollHeight); })
+    }, [isHeaderFixed]);
+
+
+
     return(
-        <div className="w-full h-28 mt-10 dark:bg-transparent relative z-10">
+        <div className={`${isHeaderFixed ? 'fixed top-0 z-50 extraExtraLarge:w-3/5 m-auto bg-white dark:bg-ebony shadow-customRed/20 shadow-lg' : 'relative mt-10 bg-transparent z-50'} w-full h-28`}>
 
             {/*search */}
             {isSearchOpen && <SearchCard setIsSearchOpen = {setIsSearchOpen} />}
@@ -73,7 +89,7 @@ const SecondaryHeader: React.FC<HeaderProps> = ({themeMode}) => {
             </SidebarSlider>}
 
             {/* header content */}
-            <div className="w-[98%] xl:w-11/12 m-auto h-full bg-gray-200 dark:bg-graphiteBlack shadow flex items-center justify-between">
+            <div className={`w-[98%] xl:w-11/12 m-auto h-full bg-gray-200 dark:bg-graphiteBlack shadow flex items-center justify-between`}>
                 {/* site logo */}
                 <div className="w-[16%] h-full bg-customRed dark:bg-zinc-800 flex items-center justify-center">
                     <img src= {Logo} alt="Logo" className="text-white" />
@@ -125,7 +141,7 @@ const SecondaryHeader: React.FC<HeaderProps> = ({themeMode}) => {
                                 <FontAwesomeIcon icon={faShoppingCart} className="text-xl transition-colors duration-300 hover:text-customRed cursor-pointer" />
                             </div>
                             <div onClick={() => setIsSliderOpen(prev => !prev)}>
-                                <svg className="cursor-pointer" id="desktop-offcanvas-handler" width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.0234375" y1="12" x2="30.0234" y2="12" stroke="currentColor" stroke-width="3"></line><path d="M5.02344 22H30.0234" stroke="currentColor" stroke-width="3"></path><path d="M10.0234 2H30.0234" stroke="currentColor" stroke-width="3"></path></svg>
+                                <svg className="cursor-pointer transition-colors duration-300 ease-in-out stroke-black dark:stroke-white hover:stroke-customRed" id="desktop-offcanvas-handler" width="31" height="24" viewBox="0 0 31 24" xmlns="http://www.w3.org/2000/svg"><line x1="0.0234375" y1="12" x2="30.0234" y2="12" stroke-width="3"></line><path d="M5.02344 22H30.0234" stroke-width="3"></path><path d="M10.0234 2H30.0234" stroke-width="3"></path></svg>
                             </div>
                         </div>
                     </div>

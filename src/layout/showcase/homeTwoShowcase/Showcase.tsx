@@ -86,7 +86,7 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode}) => {
                 <div className="w-full lg:w-[70%] xl:w-[30%] shrink-0 relative flex flex-col items-center mt-5 md:mt-0">
                     <img src= {shape2}  alt="shape 2" className="absolute -top-20 -left-20 w-[250px] animate-spin" />
                     <div className="w-full flex flex-col items-center space-y-10">
-                        <p className="text-black/65 dark:text-white/60 text-lg leading-loose text-center">It is a long established fact that a reader will be distracted by the readablejk content of a page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typeset</p>
+                        <p className="text-black/65 dark:text-white/60 text-lg leading-loose text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typeset</p>
                         <div className="">
                             <img src= {hero6} alt="hero picture 2" className="animate-swingY" />
                         </div>

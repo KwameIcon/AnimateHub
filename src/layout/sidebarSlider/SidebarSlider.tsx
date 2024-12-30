@@ -40,9 +40,9 @@ const SidebarSlider: React.FC<SidebarSliderProps> = ({className, themeMode, setI
 
 
     return(
-        <div className="w-screen h-screen bg-graphiteBlack/10 animate-slideInLeft fixed top-0 left-0 z-50 overflow-hidden" ref={maincontainerRef}>
+        <div className="w-screen h-screen bg-graphiteBlack5 animate-slideInLeft fixed top-0 left-0 z-50 overflow-hidden" ref={maincontainerRef}>
 
-            <div className={`w-[28%] h-screen bg-white dark:bg-black flex flex-col items-start space-y-10 px-5 py-10 overflow-y-auto scrollbar-none ${className}`} ref={cardRef}>
+            <div className={`w-[28%] h-screen shadow bg-white dark:bg-black flex flex-col items-start space-y-10 px-5 py-10 overflow-y-auto scrollbar-none relative z-50 ${className}`} ref={cardRef}>
 
                 {/* slider header */}
                 <div className="w-full h-32 flex items-center justify-between">

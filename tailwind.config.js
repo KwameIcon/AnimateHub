@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         'Oswald': 'Oswald',
         'BebasNeue': 'Bebas Neue',
+        'Roboto': 'Roboto',
         varuna: [
           'varuna', "sans-serif"
         ]
