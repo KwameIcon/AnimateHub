@@ -5,10 +5,18 @@ import { MiniDropDownCard } from "../../cards"
 // logo
 import Logo from '../../../../assets/images/logo/logo1.webp'
 import { useEffect, useRef, useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 
 
-const NavButtons: React.FC = () => {
+// component interface 
+interface NavButtonsProps{
+    displayContactInfo?: boolean;
+}
+
+
+
+const NavButtons: React.FC<NavButtonsProps> = ({displayContactInfo = true}) => {
 
     // states
     const [isMenu, setIsMenu] = useState(false);
@@ -24,6 +32,7 @@ const NavButtons: React.FC = () => {
     });
     const containerRef = useRef<HTMLUListElement>(null)
     const menuContainerRef = useRef<HTMLDivElement>(null)
+    const navigate = useNavigate();
 
 
 
@@ -89,6 +98,7 @@ const NavButtons: React.FC = () => {
                 </div>
 
 
+                    {/* mobile */}
                 {isMenu && <ul className="absolute top-0 left-0 w-screen h-screen overflow-y-scroll scrollbar-none bg-black/30 text-black animate-slideInLeft" ref={containerRef}>
 
                     <div className="absolute top-0 left-0 w-3/4 h-full bg-white text-black overflow-y-auto scrollbar-none" ref={menuContainerRef}>
@@ -115,9 +125,9 @@ const NavButtons: React.FC = () => {
                                 {/* home submenus */}
                             <div className="w-full overflow-hidden h-auto top-14 pl-5">
                                 <MiniDropDownCard className="w-full bg-transparent ">
-                                    <li className="py-2 px-1 rounded hover:text-white hover:bg-customRed text-black">Home One</li>
+                                    <li className="py-2 px-1 hover:text-white hover:bg-customRed text-black" onClick={() => navigate('/')} >Home One</li>
                                     <hr/>
-                                    <li className="py-2 px-1 rounded hover:text-white hover:bg-customRed text-black">Home Two</li>
+                                    <li className="py-2 px-1 hover:text-white hover:bg-customRed text-black" onClick={() => navigate('/home-two')} >Home Two</li>
                                 </MiniDropDownCard>
                             </div>
                         </li>
@@ -161,9 +171,9 @@ const NavButtons: React.FC = () => {
 
                             <div className="overflow-hidden h-auto top-14 -left-1 pl-5">
                                 <MiniDropDownCard className="bg-transparent">
-                                    <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white">Project List</li>
+                                    <li className="py-2 px-1 hover:bg-customRed hover:text-white">Project List</li>
                                     <hr/>
-                                    <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white">Project Single</li>
+                                    <li className="py-2 px-1 hover:bg-customRed hover:text-white">Project Single</li>
                                 </MiniDropDownCard>
                             </div>
                         </li>
@@ -183,9 +193,9 @@ const NavButtons: React.FC = () => {
                             <div className="overflow-hidden h-auto top-14 -left-1 pl-5">
                                 {currentSubMenu.blogsSub &&
                                     <MiniDropDownCard className="bg-transparent">
-                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white">Blog List</li>
+                                        <li className="py-2 px-1 hover:bg-customRed hover:text-white">Blog List</li>
                                         <div className="w-full h-thinHeight bg-white/10"/>
-                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white">Blog Single</li>
+                                        <li className="py-2 px-1 hover:bg-customRed hover:text-white">Blog Single</li>
                                     </MiniDropDownCard>
                                 }
                             </div>
@@ -252,9 +262,9 @@ const NavButtons: React.FC = () => {
 
                         <div className="overflow-hidden h-auto absolute top-14 -left-1">
                             <MiniDropDownCard className="hidden group-hover:flex">
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Home One</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80" onClick={() => navigate('/')} >Home One</li>
                                 <div className="w-full h-thinHeight bg-white/10"/>
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Home Two</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80" onClick={() => navigate('/home-two')} >Home Two</li>
                             </MiniDropDownCard>
                         </div>
                     </li>
@@ -271,9 +281,9 @@ const NavButtons: React.FC = () => {
 
                         <div className="overflow-hidden h-auto absolute top-14 -left-1">
                             <MiniDropDownCard className="hidden group-hover:flex">
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Service List</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Service List</li>
                                 <div className="w-full h-thinHeight bg-white/10"/>
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Service Single</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Service Single</li>
                             </MiniDropDownCard>
                         </div>
                     </li>
@@ -287,9 +297,9 @@ const NavButtons: React.FC = () => {
 
                         <div className="overflow-hidden h-auto absolute top-14 -left-1">
                             <MiniDropDownCard className="hidden group-hover:flex">
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Project List</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Project List</li>
                                 <div className="w-full h-thinHeight bg-white/10"/>
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Project Single</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Project Single</li>
                             </MiniDropDownCard>
                         </div>
                     </li>
@@ -303,9 +313,9 @@ const NavButtons: React.FC = () => {
 
                         <div className="overflow-hidden h-auto absolute top-14 -left-1">
                             <MiniDropDownCard className="hidden group-hover:flex">
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Blog List</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Blog List</li>
                                 <div className="w-full h-thinHeight bg-white/10"/>
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Blog Single</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Blog Single</li>
                             </MiniDropDownCard>
                         </div>
                     </li>
@@ -319,13 +329,13 @@ const NavButtons: React.FC = () => {
 
                         <div className="overflow-hidden h-auto absolute top-14 -left-1">
                             <MiniDropDownCard className="hidden group-hover:flex">
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Testimonial</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Testimonial</li>
                                 <div className="w-full h-thinHeight bg-white/10"/>
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Team</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Team</li>
                                 <div className="w-full h-thinHeight bg-white/10"/>
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">Pricing</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Pricing</li>
                                 <div className="w-full h-thinHeight bg-white/10"/>
-                                <li className="py-2 px-1 text-sm rounded font-light hover:bg-customRed text-white/80">FAQ</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80">FAQ</li>
                             </MiniDropDownCard>
                         </div>
                     </li>
@@ -337,7 +347,7 @@ const NavButtons: React.FC = () => {
                 </ul> 
 
                 {/* contact */}
-                <div className="flex items-center justify-start space-x-2 pl-10 extraExtraLarge:pl-20 laptop:hidden xl:flex ">
+               {displayContactInfo && ( <div className="flex items-center justify-start space-x-2 pl-10 extraExtraLarge:pl-20 laptop:hidden xl:flex ">
                     <div className=" w-14 h-14 flex items-center justify-center relative">
                         <FontAwesomeIcon icon = {faCommentDots} className="text-3xl absolute top-0 z-0 "/>
                         <FontAwesomeIcon icon = {faCommentDots} className="text-3xl absolute top-5 z-20 rotate-customRotate"/>
@@ -346,7 +356,7 @@ const NavButtons: React.FC = () => {
                         <span className="">Need Help?</span>
                         <span className="text-xl font-extrabold tracking-tight font-Oswald">[233] 558-465-569</span>
                     </div>
-                </div>
+                </div>)}
             </div>
         </div>
     )

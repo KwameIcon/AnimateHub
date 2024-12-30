@@ -1,5 +1,5 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import SecondaryButton from "../../components/Commons/buttons/secondaryButton";
+import SecondaryButton from "../../../components/Commons/buttons/secondaryButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect } from "react";
 
@@ -7,7 +7,7 @@ import { useEffect } from "react";
 // animation
 import Aos from "aos";
 import 'aos/dist/aos.css'
-import { Card } from "../../components/Commons/cards";
+import { Card } from "../../../components/Commons/cards";
 
 
 

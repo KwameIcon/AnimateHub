@@ -5,7 +5,7 @@ interface MiniUtilityCardProps{
   className?: string;
   children: ReactNode;
   onClick?: () => void;
-  buttonContainerRef: React.RefObject<HTMLDivElement>;
+  buttonContainerRef: React.RefObject<HTMLDivElement | null>;
 }
 
 

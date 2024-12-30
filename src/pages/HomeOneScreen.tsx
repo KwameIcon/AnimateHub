@@ -1,4 +1,4 @@
-import { ClientTestimonials, Footer, KeyOffers, PriceActionLayout, Showcase } from "../layout";
+import { ActiveMembers, ClientTestimonials, KeyOffers, PriceActionLayout } from "../layout/homeOneLayouts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faPlus, faUser } from "@fortawesome/free-solid-svg-icons";
 import { BackToTop } from "../components/Commons/backToTop";
@@ -6,8 +6,8 @@ import { Card, PortfolioCard } from "../components/Commons/cards";
 import { useEffect } from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import ActiveMembers from "../layout/activeMembers/activeMembers";
 import { ContactUs } from "../components/contactUs";
+import { Showcase } from "../layout/showcase/homeOneShowcase";
 
 // animate
 import Aos from "aos";
@@ -21,22 +21,26 @@ import About4 from '../assets/images/others/about-3.webp';
 import About5 from '../assets/images/others/about-4.webp';
 import bgSketch from '../assets/images/others/pattern-1 (1).webp'
 import P1 from '../assets/images/portfolio/1.webp'
+import P2 from '../assets/images/portfolio/2.webp'
+import P3 from '../assets/images/portfolio/3.webp'
+import P4 from '../assets/images/portfolio/4.webp'
 import SectionHalfBg from '../assets/images/others/section-half-bg-1.webp'
 import blog1 from '../assets/images/others/blog-1.webp'
 import blog2 from '../assets/images/others/blog-2.webp'
 import blog3 from '../assets/images/others/blog-3.webp'
+import Footer from "../layout/footer/Footer";
 
 
 
 // component interface
-interface HomeScreenProps{
+interface HomeOneScreenProps{
     themeMode: string;
     setThemeMode: React.Dispatch<React.SetStateAction<string>>;
 }
 
 
 
-const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
+const HomeOneScreen: React.FC<HomeOneScreenProps> = ({themeMode, setThemeMode}) => {
 
 
     const {ref, inView} = useInView({
@@ -160,17 +164,17 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
                         <hr />
                         <p className="text-white/70 group-hover:animate-slideFromBottom">Lorem ipsum dolor sit amet.</p>
                     </PortfolioCard>
-                    <PortfolioCard Image= {P1} className="my-3 lg:my-0 " dataAos="fade-up">
+                    <PortfolioCard Image= {P2} className="my-3 lg:my-0 " dataAos="fade-up">
                         <h1 className="capitalize font-Oswald text-2xl text-white font-bold group-hover:animate-slideInSlow">Cloud Migrate pro</h1>
                         <hr />
                         <p className="text-white/70 group-hover:animate-slideFromBottom">Lorem ipsum dolor sit amet.</p>
                     </PortfolioCard>
-                    <PortfolioCard Image= {P1} className="my-3 lg:my-0 lg:mt-12" dataAos="fade-down">
+                    <PortfolioCard Image= {P3} className="my-3 lg:my-0 lg:mt-12" dataAos="fade-down">
                         <h1 className="capitalize font-Oswald text-2xl text-white font-bold group-hover:animate-slideInSlow">Cloud Migrate pro</h1>
                         <hr />
                         <p className="text-white/70 group-hover:animate-slideFromBottom">Lorem ipsum dolor sit amet.</p>
                     </PortfolioCard>
-                    <PortfolioCard Image= {P1} className="my-3 lg:my-0 " dataAos="fade-up">
+                    <PortfolioCard Image= {P4} className="my-3 lg:my-0 " dataAos="fade-up">
                         <h1 className="capitalize font-Oswald text-2xl text-white font-bold group-hover:animate-slideInSlow">Cloud Migrate pro</h1>
                         <hr />
                         <p className="text-white/70 group-hover:animate-slideFromBottom">Lorem ipsum dolor sit amet.</p>
@@ -398,4 +402,4 @@ const HomeScreen: React.FC<HomeScreenProps> = ({themeMode, setThemeMode}) => {
     )
 }
 
-export default HomeScreen;
+export default HomeOneScreen;

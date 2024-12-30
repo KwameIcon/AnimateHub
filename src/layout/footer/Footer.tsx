@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Logo } from "../../components/Commons/logo";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faAngleRight, faCalendar, faCalendarAlt, faEnvelope, faPaperPlane, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faCalendarAlt, faEnvelope, faPaperPlane, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 
 // images

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SecondaryButton from "../../components/Commons/buttons/secondaryButton";
+import SecondaryButton from "../../../components/Commons/buttons/secondaryButton";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 
@@ -83,8 +83,7 @@ const PricingActionLayout: React.FC = () => {
             </div>
 
             
-{/* second card */}
-            {/* card */}
+            {/* second card */}
             <div className="w-full h-[38rem] md:h-96 lg:h-64 m-auto border dark:border-white border-opacity-50 dark:border-opacity-10 overflow-hidden flex flex-wrap items-center justify-start relative" data-aos="fade-up" data-aos-delay="100">
                 <div className="w-full lg:w-[26%] xl:w-[24%] h-[45%] lg:h-full flex flex-col justify-end md:justify-center space-y-9 lg:space-y-5 xl:space-y-9 p-5 px-12 lg:px-5 xl:px-12 border-b md:border-r border-white border-opacity-10">
                     <div className="">
@@ -131,7 +130,7 @@ const PricingActionLayout: React.FC = () => {
 
                     {/* action button */}
                 <div className="w-64 h-full flex items-center justify-center">
-                    <div className="absolute z-0 top-4 right-0 w-40 h-12 bg-gradient-to-t from-customRed via-customRed text-white to-ebony dark:bg-gradient-to-r dark:from-customRed dark:to-ebony flex items-center justify-center overflow-hidden before:absolute before:z-10 before:-top-1 before:bg-white before:dark:bg-ebony before:w-14 before:h-14 before:-left-10 before:rounded-tl-full before:rounded-bl-full before:rounded-br-full before:rotate-45 uppercase text-lg font-bold">popular</div>
+                    <div className="absolute z-0 top-4 border-none right-0 w-40 h-12 bg-gradient-to-t from-customRed via-customRed text-white to-ebony dark:bg-gradient-to-r dark:from-customRed dark:to-ebony flex items-center justify-center overflow-hidden before:absolute before:z-10 before:-top-1 before:bg-white before:dark:bg-ebony before:w-14 before:h-14 before:-left-10 before:rounded-tl-full before:rounded-bl-full before:rounded-br-full before:rotate-45 uppercase text-lg font-bold">popular</div>
                     <SecondaryButton className="border border-customRed w-44">
                         <span>select plan</span>
                         <FontAwesomeIcon icon={faArrowRight}/>

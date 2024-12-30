@@ -1,7 +1,5 @@
-export {default as Showcase} from './showcase/Showcase'
-export {default as Header} from './showcase/header/header'
 export {default as KeyOffers} from './keyOffers/KeyOffers'
 export {default as ClientTestimonials} from './testimonials/clientTestimonials'
 export {default as CarouselContainer} from './carouselContainer/CarouselContainer'
 export {default as PriceActionLayout} from './pricingAction/pricingActionLayout'
-export {default as Footer} from './footer/Footer'
+export {default as ActiveMembers} from './activeMembers/activeMembers'

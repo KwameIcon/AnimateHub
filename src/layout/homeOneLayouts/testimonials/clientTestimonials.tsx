@@ -1,15 +1,15 @@
 // images
-import person1 from '../../assets/images/people/reviewers/person-1.webp'
-import person2 from '../../assets/images/people/reviewers/person-2.webp'
-import person3 from '../../assets/images/people/reviewers/person-11.webp'
-import person4 from '../../assets/images/people/reviewers/person-12.webp'
-import person5 from '../../assets/images/people/reviewers/person-13.webp'
-import person6 from '../../assets/images/people/reviewers/person-14.webp'
+import person1 from '../../../assets/images/people/reviewers/person-1.webp'
+import person2 from '../../../assets/images/people/reviewers/person-2.webp'
+import person3 from '../../../assets/images/people/reviewers/person-11.webp'
+import person4 from '../../../assets/images/people/reviewers/person-12.webp'
+import person5 from '../../../assets/images/people/reviewers/person-13.webp'
+import person6 from '../../../assets/images/people/reviewers/person-14.webp'
 
 
 
-import { CarouselButton } from "../../components/Commons/buttons";
-import { Card } from "../../components/Commons/cards";
+import { CarouselButton } from "../../../components/Commons/buttons";
+import { Card } from "../../../components/Commons/cards";
 import CarouselContainer from "../carouselContainer/CarouselContainer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons'

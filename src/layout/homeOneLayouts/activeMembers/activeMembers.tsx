@@ -1,19 +1,15 @@
 // images
-import person1 from '../../assets/images/people/members/people-1.webp'
-import person2 from '../../assets/images/people/members/people-2.webp'
-import person3 from '../../assets/images/people/members/people-3.webp'
-import person4 from '../../assets/images/people/members/people-1.webp'
-import person5 from '../../assets/images/people/members/people-2.webp'
-import person6 from '../../assets/images/people/members/people-3.webp'
+import person1 from '../../../assets/images/people/members/people-1.webp'
+import person2 from '../../../assets/images/people/members/people-2.webp'
+import person3 from '../../../assets/images/people/members/people-3.webp'
 
 
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { CarouselButton } from '../../components/Commons/buttons'
+import { CarouselButton } from '../../../components/Commons/buttons'
 import { useEffect, useRef, useState } from 'react'
 import CarouselContainer from '../carouselContainer/CarouselContainer'
-import { Card } from '../../components/Commons/cards'
 import { faFacebook, faLinkedin, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faShareNodes } from '@fortawesome/free-solid-svg-icons'
 
@@ -108,7 +104,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
+                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
                         <h2 className='uppercase text-lg font-bold font-Oswald transition-colors duration-300 hover:text-customRed cursor-pointer'>brooklyn simmons</h2>
                         <p className='dark:text-white/70 capitalize'>president of sales</p>
                     </div>
@@ -137,7 +133,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
+                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
                         <h2 className='uppercase text-lg font-bold font-Oswald transition-colors duration-300 hover:text-customRed cursor-pointer'>brooklyn simmons</h2>
                         <p className='dark:text-white/70 capitalize'>president of sales</p>
                     </div>
@@ -166,7 +162,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
+                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
                         <h2 className='uppercase text-lg font-bold font-Oswald transition-colors duration-300 hover:text-customRed cursor-pointer'>brooklyn simmons</h2>
                         <p className='dark:text-white/70 capitalize'>president of sales</p>
                     </div>
@@ -195,7 +191,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
+                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
                         <h2 className='uppercase text-lg font-bold font-Oswald transition-colors duration-300 hover:text-customRed cursor-pointer'>brooklyn simmons</h2>
                         <p className='dark:text-white/70 capitalize'>president of sales</p>
                     </div>
@@ -224,7 +220,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
+                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
                         <h2 className='uppercase text-lg font-bold font-Oswald transition-colors duration-300 hover:text-customRed cursor-pointer'>brooklyn simmons</h2>
                         <p className='dark:text-white/70 capitalize'>president of sales</p>
                     </div>
@@ -253,7 +249,7 @@ const ActiveMembers: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
+                    <div className='absolute bottom-0 left-0 z-0 w-full h-36 bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-40 flex flex-col justify-end items-center space-y-2 pb-7'>
                         <h2 className='uppercase text-lg font-bold font-Oswald transition-colors duration-300 hover:text-customRed cursor-pointer'>brooklyn simmons</h2>
                         <p className='dark:text-white/70 capitalize'>president of sales</p>
                     </div>

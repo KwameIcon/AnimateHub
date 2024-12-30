@@ -1,10 +1,10 @@
-import { faArrowLeftLong, faArrowRightLong, faStar } from '@fortawesome/free-solid-svg-icons';
-import Header from './header/header';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FirstSlide, SecondSlide, ThirdSlide } from '../../components/sliders/showcaseSlider';
 import { useState } from 'react';
 
-import BgWavyLines from '../../assets/images/svg/shape-5.webp';
+import BgWavyLines from '../../../assets/images/svg/shape-5.webp';
+import { FirstSlide, SecondSlide, ThirdSlide } from '../../../components/sliders/showcaseSlider';
+import Header from './header';
 
 
 
@@ -17,7 +17,6 @@ interface ShowcaseProps{
 
 
 const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
-
     // states
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -45,7 +44,7 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode, setThemeMode}) => {
             <div className='absolute z-10 top-0 left-0 w-full h-full bg-gradient-to-t from-white dark:from-ebony via-white/85 dark:via-ebonyZ/90 to-blue-100/50 dark:to-ebony/80'/>
 
             {/* header component */}
-            <Header themeMode = {themeMode} setThemeMode = {setThemeMode}/>
+            <Header themeMode = {themeMode} />
 
 
 

@@ -12,7 +12,7 @@ import { ReactNode } from "react";
 const MiniDropDownCard: React.FC<MiniDropDownCardProps> = ({className, children}) => {
 
     return(
-        <ul className= {` min-w-40 h-auto bg-ebony animate-slideIn ${className} flex flex-col space-y-1 px-1 py-2`}>
+        <ul className= {` min-w-40 h-auto bg-ebony animate-slideIn ${className} flex flex-col space-y-1`}>
             {children}
         </ul>
     )
