@@ -87,7 +87,12 @@ module.exports = {
           '0%':{transform: 'translateY(0)'},
           '50%':{transform: 'translateY(20px)'},
           '100%':{transform: 'translateY(-20px)'}
-        }
+        },
+        // flashFromTop: {
+        //   '0%': {transform: 'translateY(-100%)'},
+        //   '50%': {transform: 'translateY(50%)'},
+        //   '100%': {transform: 'translateY(-100%), opacity: 0' }
+        // }
       },
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
@@ -100,6 +105,7 @@ module.exports = {
         spin: 'spin 30s linear infinite',
         swing: 'swing 3s linear infinite alternate',
         swingY: 'swingY 5s linear infinite alternate',
+        // flashFromTop: 'flashFromTop 1s ease-in-out alternate',
       }
     },
   },
