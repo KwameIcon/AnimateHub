@@ -11,6 +11,7 @@ module.exports = {
         'Oswald': 'Oswald',
         'BebasNeue': 'Bebas Neue',
         'Roboto': 'Roboto',
+        'SpaceGrotesk': 'Space Grotesk',
         varuna: [
           'varuna', "sans-serif"
         ]
@@ -89,11 +90,20 @@ module.exports = {
           '50%':{transform: 'translateY(20px)'},
           '100%':{transform: 'translateY(-20px)'}
         },
-        // flashFromTop: {
-        //   '0%': {transform: 'translateY(-100%)'},
-        //   '50%': {transform: 'translateY(50%)'},
-        //   '100%': {transform: 'translateY(-100%), opacity: 0' }
-        // }
+        scaleInfinite: {
+          '0%': {
+            transform: 'scale(0)',
+            opacity: '1',
+          },
+          '50%': {
+            transform: 'scale(1)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'scale(1)',
+            opacity: '0',
+          }
+        },
       },
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
@@ -106,7 +116,8 @@ module.exports = {
         spin: 'spin 30s linear infinite',
         swing: 'swing 3s linear infinite alternate',
         swingY: 'swingY 5s linear infinite alternate',
-        // flashFromTop: 'flashFromTop 1s ease-in-out alternate',
+        'scale-infinite': 'scaleInfinite 3s infinite',
+        'scale-infinite-f': 'scaleInfinite 3s infinite 0.1s',
       }
     },
   },
