@@ -3,3 +3,8 @@ export {default as ClientTestimonials} from './testimonials/clientTestimonials'
 export {default as CarouselContainer} from './carouselContainer/CarouselContainer'
 export {default as PriceActionLayout} from './pricingAction/pricingActionLayout'
 export {default as ActiveMembers} from './activeMembers/activeMembers'
+export {default as AboutUsHomeOne} from './about-us/aboutUs';
+export {default as UserAskQuestion} from './userAskQuestion/userAskQuestion';
+export {default as LatestPortfolio} from './latestPortfolio/latestPortfolio';
+export {default as SuccessMetrics} from './successMetrics/successMetrics';
+export {default as Blog} from './blog/blog';
