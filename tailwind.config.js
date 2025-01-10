@@ -68,6 +68,10 @@ module.exports = {
           '0%': {transform: 'translateY(30px)'},
           '100%': {transform: 'translateY(0)'}
         },
+        slideFromBottom1: {
+          '0%': {transform: 'translateY(30px)', opacity: '0'},
+          '100%': {transform: 'translateY(0)', opacity: '1'}
+        },
         slideInSlow: {
           '0%': {transform: 'translateY(-30%)', opacity: '0'},
           '100%': {transform: 'translateY(0)', opacity: '1'}
@@ -116,6 +120,10 @@ module.exports = {
         slideIn: 'slideIn 0.5s ease-in-out forwards',
         slideInSlow: 'slideInSlow 1s ease-in',
         slideFromBottom: 'slideFromBottom 1s ease-in',
+        slideFromBottom1: 'slideFromBottom1 0.5s ease-in',
+        slideFromBottom2: 'slideFromBottom1 0.6s ease-in',
+        slideFromBottom3: 'slideFromBottom1 0.7s ease-in',
+        slideFromBottom4: 'slideFromBottom1 0.8s ease-in',
         slideInLeft: 'slideInLeft 0.8s ease-in-out forwards',
         spin: 'spin 30s linear infinite',
         swing: 'swing 3s linear infinite alternate',

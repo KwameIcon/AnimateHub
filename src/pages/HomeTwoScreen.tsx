@@ -1,12 +1,13 @@
 import { Showcase } from "../layout/showcase/homeTwoShowcase";
 import { useEffect } from "react";
-import { AboutUsHomeTwo, AutoScroll, HomeTwoPrice, OurProjects, OurWorks, Services, UserSendProject } from "../layout/HomeTwoLayouts";
+import { AboutUsHomeTwo, ActiveMembers, AutoScroll, HomeTwoPrice, OurProjects, OurWorks, Services, UserSendProject } from "../layout/HomeTwoLayouts";
 
 
 
 // aos animation
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { ClientTestimonials } from "../layout/homeOneLayouts";
 
 
 
@@ -62,6 +63,12 @@ const HomeTwoScreen: React.FC<HomeTwoScreenProps> = ({themeMode}) => {
 
             {/* projects */}
             <OurProjects/>
+
+            {/* active members */}
+            <ActiveMembers/>
+
+            {/* client testimonials */}
+            <ClientTestimonials/>
 
         </section>
     )

@@ -49,7 +49,7 @@ const OurProjects: React.FC = () => {
 
 
     return (
-        <section className="my-10 w-full xl:w-[97%] m-auto h-auto py-10 px-5 flex flex-wrap items-center justify-start md:gap-10 lg:gap-5 xl:gap-0 overflow-x-scroll scrollbar-none" data-aos="fade-up">
+        <section className="my-10 w-full xl:w-[97%] m-auto h-auto py-5 px-5 flex flex-wrap items-center justify-start md:gap-10 lg:gap-5 xl:gap-0 overflow-x-scroll scrollbar-none" data-aos="fade-up">
 
             {/* header */}
             <header className="w-full flex flex-col lg:flex-row items-start lg:items-end gap-8 justify-between py-20" data-aos="fade-up" data-aos-delay="0">
