@@ -65,7 +65,7 @@ const OurProjects: React.FC = () => {
 
             <div className="w-full h-auto m-auto flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between gap-5">
                 {/* categories */}
-                <ul className="w-full lg:w-auto h-auto flex flex-col items-start justify-start gap-5">
+                <ul className="w-full lg:w-auto h-auto flex flex-col items-start justify-start space-y-5">
                     {PROJECTCATEGORIES.map((cat) => (
                         <li
                             className={`w-full lg:w-80 h-16 shadow-sm cursor-pointer rounded flex items-center justify-between px-5 font-Oswald tracking-wider uppercase font-bold transition-all duration-200 ease-linear hover:text-white group relative overflow-hidden after:absolute after:z-0 after:h-full after:w-0 after:right-0 after:top-0 after:bg-customRed after:transition-all after:duration-300 after:ease-linear hover:after:w-full hover:after:left-0 ${cat.id === currentCategory ? "bg-customRed text-white" : "bg-gray-50 dark:bg-graphiteBlack" }`} key={cat.id} onClick={() => handleSelectCat(cat.id, cat.title)} >
@@ -84,7 +84,7 @@ const OurProjects: React.FC = () => {
                 {/* projects */}
                 <ul className="w-full lg:w-auto grid grid-cols-1 md:grid-cols-2 place-items-center gap-5">
                     {projects.map((project) => (
-                        <li className="w-[98%] lg:w-[20rem] xl:w-[31rem] h-[20rem] lg:h-[20rem] xl:h-[31rem] overflow-hidden rounded flex flex-col items-start justify-start gap-2 group " key={project.id} data-aos="zoom-in-left" >
+                        <li className="w-[98%] lg:w-[20rem] xl:w-[29rem] h-[20rem] lg:h-[20rem] xl:h-[31rem] overflow-hidden rounded flex flex-col items-start justify-start gap-2 group " key={project.id} data-aos="zoom-in-left" >
                             <div className="w-full h-[75%] lg:h-[71%] overflow-hidden relative rounded before:absolute before:inset-0 before:w-full before:h-full before:bg-black/30 before:z-[1] group-hover:before:animate-rotateX">
                                 <img src={project.Image} alt="" className="w-[100%] h-full transition-transform duration-300 ease-linear group-hover:scale-105" />
 
