@@ -1,6 +1,6 @@
 import { Showcase } from "../layout/showcase/homeTwoShowcase";
 import { useEffect } from "react";
-import { AboutUsHomeTwo, AutoScroll, HomeTwoPrice, OurWorks, Services, UserSendProject } from "../layout/HomeTwoLayouts";
+import { AboutUsHomeTwo, AutoScroll, HomeTwoPrice, OurProjects, OurWorks, Services, UserSendProject } from "../layout/HomeTwoLayouts";
 
 
 
@@ -59,6 +59,9 @@ const HomeTwoScreen: React.FC<HomeTwoScreenProps> = ({themeMode}) => {
 
             {/* Cyber scape defend, smartTech integrations and data vista analytics */}
             <OurWorks/>
+
+            {/* projects */}
+            <OurProjects/>
 
         </section>
     )

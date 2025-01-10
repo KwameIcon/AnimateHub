@@ -90,6 +90,10 @@ module.exports = {
           '50%':{transform: 'translateY(20px)'},
           '100%':{transform: 'translateY(-20px)'}
         },
+        rotateX: {
+          '0%': { transform: 'rotateX(45deg)', transformOrigin: 'center top' },
+          '100%': { transform: 'rotateX(0deg)', transformOrigin: 'center top' },
+        },
         scaleInfinite: {
           '0%': {
             transform: 'scale(0)',
@@ -106,7 +110,7 @@ module.exports = {
         },
       },
       animation: {
-        fadeIn: 'fadeIn 0.3s ease-in-out',
+        fadeIn: 'fadeIn 0.5s ease-in-out',
         fadeInSlow: 'fadeInSlow 5s ease-in-out',
         fadeOut: 'fadeOut 2s ease-out 1s forwards',
         slideIn: 'slideIn 0.5s ease-in-out forwards',
@@ -116,6 +120,7 @@ module.exports = {
         spin: 'spin 30s linear infinite',
         swing: 'swing 3s linear infinite alternate',
         swingY: 'swingY 5s linear infinite alternate',
+        rotateX: 'rotateX 1s linear forwards',
         'scale-infinite': 'scaleInfinite 3s infinite',
         'scale-infinite-f': 'scaleInfinite 3s infinite 0.1s',
       }
