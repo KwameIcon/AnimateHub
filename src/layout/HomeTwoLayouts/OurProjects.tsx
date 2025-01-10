@@ -68,10 +68,10 @@ const OurProjects: React.FC = () => {
                 <ul className="w-full lg:w-auto h-auto flex flex-col items-start justify-start space-y-5">
                     {PROJECTCATEGORIES.map((cat) => (
                         <li
-                            className={`w-full lg:w-80 h-16 shadow-sm cursor-pointer rounded flex items-center justify-between px-5 font-Oswald tracking-wider uppercase font-bold transition-all duration-200 ease-linear hover:text-white group relative overflow-hidden after:absolute after:z-0 after:h-full after:w-0 after:right-0 after:top-0 after:bg-customRed after:transition-all after:duration-300 after:ease-linear hover:after:w-full hover:after:left-0 ${cat.id === currentCategory ? "bg-customRed" : "bg-gray-50 dark:bg-graphiteBlack" }`} key={cat.id} onClick={() => handleSelectCat(cat.id, cat.title)} >
+                            className={`w-full lg:w-80 h-16 shadow-sm cursor-pointer rounded flex items-center justify-between px-5 font-Oswald tracking-wider uppercase font-bold transition-all duration-200 ease-linear hover:text-white group relative overflow-hidden after:absolute after:z-0 after:h-full after:w-0 after:right-0 after:top-0 after:bg-customRed after:transition-all after:duration-300 after:ease-linear hover:after:w-full hover:after:left-0 ${cat.id === currentCategory ? "bg-customRed text-white" : "bg-gray-50 dark:bg-graphiteBlack" }`} key={cat.id} onClick={() => handleSelectCat(cat.id, cat.title)} >
                             <span className="relative z-10">{cat.title}</span>
                             <svg
-                                className="w-10 fill-black dark:fill-white relative z-10 transition-colors duration-200 ease-linear group-hover:fill-white"
+                                className={`w-10 relative z-10 transition-colors duration-200 ease-linear group-hover:fill-white ${cat.id === currentCategory ? " fill-white" : " fill-black dark:fill-white" }`}
                                 viewBox="0 0 28 9"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
