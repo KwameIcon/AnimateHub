@@ -18,9 +18,9 @@ const Blog: React.FC = () => {
                 </div>
             </header>
 
-            <div className="w-[95%] md:w-full m-auto flex flex-wrap items-center justify-start gap-5">
+            <div className="w-[95%] md:w-full m-auto flex flex-wrap items-center justify-between gap-5 xl:gap-4">
                 {BLOGDATA.map((blog) => (
-                    <Card className="!w-full md:!w-[19rem] xl:!w-[27rem] xxxs:!h-[24rem] xxs:!h-[28rem] md:!h-[26rem] xl:!h-[33rem] !p-0 !rounded !overflow-hidden !group">
+                    <Card className="!w-full md:!w-[22rem] lg:!w-[19rem] xl:!w-[26rem] xxxs:!h-[24rem] xxs:!h-[28rem] md:!h-[26rem] xl:!h-[32rem] !p-0 !rounded !overflow-hidden !group">
                         <div className="w-full h-[60%] relative overflow-hidden transition-all duration-300 ease-linear before:absolute before:z-[1] before:inset-0 before:w-full before:h-full group-hover:before:bg-gray-50/20 before:transition-all before:duration-300 before:ease-linear group-hover:before:w-0 group-hover:before:left-1/2 after:absolute after:z-[1] after:inset-0 after:w-full after:h-full group-hover:after:bg-gray-50/20 after:transition-all after:duration-500 after:ease-linear group-hover:after:h-0 group-hover:after:top-1/2">
                             <div className="absolute z-0 inset-0 w-full h-full">
                                 <img src={blog.blogImage} alt="" className="w-full h-full scale-105 transition-transform duration-300 ease-linear group-hover:scale-100 overflow-hidden" />
