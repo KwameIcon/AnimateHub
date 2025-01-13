@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeButton } from './components/Commons/buttons';
-import { HomeOneScreen, HomeTwoScreen } from './pages';
+import { About, HomeOneScreen, HomeTwoScreen, Projects, Service } from './pages';
+import Testimonials from './pages/pages/Testimonials';
 
 
 
@@ -62,6 +63,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeOneScreen themeMode={themeMode} setThemeMode={setThemeMode} />} />
           <Route path="/home-two" element={<HomeTwoScreen themeMode={themeMode} />} />
+          <Route path="/about" element={<About themeMode={themeMode} />} />
+          <Route path="/service/:serviceDetail?" element={<Service themeMode={themeMode} />} />
+          <Route path="/projects/:projectDetail?" element={<Projects themeMode={themeMode} />} />
+          <Route path="/testimonials/" element={<Testimonials themeMode={themeMode} />} />
         </Routes>
       </main>
     </Router>

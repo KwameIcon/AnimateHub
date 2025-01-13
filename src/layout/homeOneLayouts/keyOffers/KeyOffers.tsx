@@ -1,7 +1,7 @@
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import SecondaryButton from "../../../components/Commons/buttons/secondaryButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Card } from "../../../components/Commons/cards";
 import { KEYOFFERSDATA } from "../../../DATA/HomeOneData/KEYOFFERSDATA";
 
@@ -12,23 +12,44 @@ import 'aos/dist/aos.css'
 
 
 
+interface KeyOffersProps{
+    limit?:string;
+}
+
+
+interface dataType{
+    id:number;
+    header: string;
+    path: string[];
+    description: string;
+}
 
 
 
-const KeyOffers: React.FC = () => {
+const KeyOffers: React.FC<KeyOffersProps> = ({limit = "limited"}) => {
+
+    const [data, setData] = useState<dataType[]>([]);
 
 
     useEffect(() => {
         Aos.init({duration:3000})
     },[])
 
+    useEffect(() => {
+        if(limit === "limited"){
+            setData(KEYOFFERSDATA.slice(0, 3));
+        }else{
+            setData(KEYOFFERSDATA);
+        }
+    })
+
 
     return(
-        <section className="w-full xl:w-11/12 m-auto h-auto py-10 px-5 md:px-0 flex flex-wrap items-center justify-between md:justify-center md:gap-10 lg:gap-5 xl:gap-0 xl:justify-between extraExtraLarge:w-7/12 animate-appearFromBottomF">
+        <section className="w-full xl:w-11/12 m-auto h-auto py-10 px-5 md:px-0 flex flex-wrap items-center justify-between md:justify-center md:gap-10 lg:gap-5 xl:justify-between extraExtraLarge:w-7/12 animate-appearFromBottomF">
 
 
             {/* card */}
-            {KEYOFFERSDATA.map((offer) => (
+            {data.map((offer) => (
                 <Card dataAos="fade-up" data-aos='' dataAosDelay="0" key={offer.id}>
 
                     {/* border bottom */}

@@ -15,7 +15,7 @@ import avater3 from '../../../assets/images/people/customers/avatar-3.webp';
 import hero5 from '../../../assets/images/others/hero-5.webp';
 import hero6 from '../../../assets/images/others/hero-6.webp';
 import shape2 from '../../../assets/images/shape-2.webp';
-import SecondaryButton from "../../../components/Commons/buttons/secondaryButton";
+import { Shape1, Shape2, Shape3 } from "../../../assets/images/svg/svg files";
 
 
 // component interface
@@ -50,7 +50,10 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode}) => {
             { isMobile ? ( <Header themeMode={themeMode}/> ):(<SecondaryHeader themeMode={themeMode}/>)}
 
             {/* bg ring */}
-            <img src={shape1} alt="bg ring" className="hidden lg:block lg:absolute lg:-top-20 lg:left-0 lg:z-0 lg:opacity-30 lg:animate-swingY" />
+            {/* <img src={shape1} alt="bg ring" className="" /> */}
+            <div className="hidden lg:block lg:absolute lg:-top-20 lg:left-0 lg:z-0 dark:lg:opacity-30 lg:animate-swingY">
+                <Shape1/>
+            </div>
 
             {/* showcase content */}
             <div className="w-full h-auto mt-40 flex flex-wrap xl:flex-nowrap items-start justify-center relative z-10 px-5 xl:px-10 gap-20">
@@ -84,9 +87,14 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode}) => {
                 </div>
                 {/* flex 3 */}
                 <div className="w-full lg:w-[70%] xl:w-[30%] shrink-0 relative flex flex-col items-center mt-5 md:mt-0">
-                    <img src= {shape2}  alt="shape 2" className="absolute -top-20 -left-20 w-[250px] animate-spin" />
+                    <div className="absolute md:-top-20 -left-20 w-[300px]">
+                        <Shape2/>
+                    </div>
+                    <div className="w-full absolute bottom-20 md:-bottom-52 right-16">
+                        <Shape3/>
+                    </div>
                     <div className="w-full flex flex-col items-center space-y-10">
-                        <p className="text-black/65 dark:text-white/60 text-lg leading-loose text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typeset</p>
+                        <p className="text-black/80 dark:text-white/60 text-lg leading-loose text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typeset</p>
                         <div className="">
                             <img src= {hero6} alt="hero picture 2" className="animate-swingY" />
                         </div>

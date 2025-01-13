@@ -25,7 +25,7 @@ const PortfolioCard: React.FC<PortfolioCardProp> = ({className, Image, children,
     })
 
     return(
-        <div className={`w-72 m-auto md:w-[22rem] lg:w-56 xl:w-80 h-[25rem] md:h-[29rem] lg:h-[20rem] xl:h-[29rem] overflow-hidden rounded relative group ${className}`} data-aos ={dataAos}>
+        <div className={`w-72 m-auto md:w-[22rem] lg:w-56 xl:w-[22rem] h-[25rem] md:h-[29rem] lg:h-[20rem] xl:h-[29rem] overflow-hidden rounded relative group ${className}`} data-aos ={dataAos}>
 
             {/* bg image */}
             <div className='absolute z-0 top-0 left-0 w-full h-full' >

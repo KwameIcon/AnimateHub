@@ -9,19 +9,20 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ClientTestimonials } from "../layout/homeOneLayouts";
 import Footer from "../layout/footer/Footer";
+import { BackToTop } from "../components/Commons/backToTop";
 
 
 
 
 
 // component interface
-interface HomeTwoScreenProps{
+interface HomeTwoScreenProps {
     themeMode: string;
 }
 
 
 
-const HomeTwoScreen: React.FC<HomeTwoScreenProps> = ({themeMode}) => {
+const HomeTwoScreen: React.FC<HomeTwoScreenProps> = ({ themeMode }) => {
 
     // aos animation initialization
     useEffect(() => {
@@ -32,55 +33,59 @@ const HomeTwoScreen: React.FC<HomeTwoScreenProps> = ({themeMode}) => {
 
 
 
-    return(
+    return (
         <section className="w-screen min-h-screen extraExtraLarge:w-3/5 m-auto overflow-hidden">
 
+
+            {/* back to top button */}
+            <BackToTop />
+
             {/* showcase */}
-            <Showcase themeMode = {themeMode}/>
+            <Showcase themeMode={themeMode} />
 
 
             {/* our services */}
-            <Services/>
+            <Services />
 
             {/* Leave the handy work to us */}
-            <UserSendProject/>
+            <UserSendProject />
 
 
             {/* pricing */}
-            <HomeTwoPrice/>
+            <HomeTwoPrice />
 
 
             {/* about us */}
-            <AboutUsHomeTwo/>
+            <AboutUsHomeTwo />
 
 
             {/* work process */}
             <div className="my-10">
-            <AutoScroll/>
+                <AutoScroll />
             </div>
 
             {/* Cyber scape defend, smartTech integrations and data vista analytics */}
-            <OurWorks/>
+            <OurWorks />
 
             {/* projects */}
-            <OurProjects/>
+            <OurProjects />
 
             {/* active members */}
-            <ActiveMembers/>
+            <ActiveMembers />
 
             {/* client testimonials */}
-            <ClientTestimonials/>
+            <ClientTestimonials />
 
             {/* site analytics */}
-            <Analytics/>
+            <Analytics />
 
 
             {/* blog */}
-            <Blog/>
+            <Blog />
 
 
             {/* footer */}
-            <Footer themeMode= {themeMode}/>
+            <Footer themeMode={themeMode} />
 
         </section>
     )

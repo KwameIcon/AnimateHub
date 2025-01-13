@@ -54,7 +54,7 @@ const AboutUsHomeOne: React.FC = () => {
             {/* about */}
             <div className="w-full p-2 lg:p-0 order-1 lg:order-2 shrink-0 lg:pr-4 flex flex-col space-y-10" data-aos="zoom-in-left" data-aos-duration="3000" >
                 <h2 className="font-bold text-xl uppercase text-customRed font-Oswald tracking-widest" >About us</h2>
-                <h1 className="w-full lg:w-3/5 text-5xl font-semibold font-Oswald leading-[2.7rem]" >Empowering Your Digital Tomorrow</h1>
+                <h1 className="w-full lg:w-4/5 text-5xl font-semibold font-Oswald leading-relaxed" >Empowering Your Digital Tomorrow</h1>
                 <p className="leading-relaxed dark:text-white/75">It is a long established fact that a reader will be distracted by the readablejk content of a page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typesetting industry loren ipsum
                 </p>
                 <div className="w-full flex flex-wrap space-y-5 lg:space-y-0 items-center lg: justify-between pr-2 " >
