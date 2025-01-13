@@ -7,7 +7,7 @@ import { BLOGDATA } from "../../DATA/HomeTwoData/BLOGDATA";
 const Blog: React.FC = () => {
 
     return (
-        <section className="w-full xl:w-[97%] m-auto h-auto px-2 md:px-5 flex flex-wrap items-center justify-start md:gap-10 lg:gap-5 xl:gap-0 overflow-x-scroll scrollbar-none">
+        <section className="w-full xl:w-[97%] m-auto h-auto py-2 px-2 md:px-5 flex flex-wrap items-center justify-start md:gap-10 lg:gap-5 xl:gap-0 overflow-x-scroll scrollbar-none">
 
 
             {/* header */}
@@ -20,7 +20,7 @@ const Blog: React.FC = () => {
 
             <div className="w-[95%] md:w-full m-auto flex flex-wrap items-center justify-between gap-5 xl:gap-4">
                 {BLOGDATA.map((blog) => (
-                    <Card className="!w-full md:!w-[22rem] lg:!w-[19rem] xl:!w-[26rem] xxxs:!h-[24rem] xxs:!h-[28rem] md:!h-[26rem] xl:!h-[32rem] !p-0 !rounded !overflow-hidden !group">
+                    <Card className="!w-full md:!w-[22rem] lg:!w-[19rem] xl:!w-[26rem] xxxs:!h-[24rem] xxs:!h-[28rem] md:!h-[26rem] xl:!h-[32rem] !p-0 !rounded !overflow-hidden !shadow !group">
                         <div className="w-full h-[60%] relative overflow-hidden transition-all duration-300 ease-linear before:absolute before:z-[1] before:inset-0 before:w-full before:h-full group-hover:before:bg-gray-50/20 before:transition-all before:duration-300 before:ease-linear group-hover:before:w-0 group-hover:before:left-1/2 after:absolute after:z-[1] after:inset-0 after:w-full after:h-full group-hover:after:bg-gray-50/20 after:transition-all after:duration-500 after:ease-linear group-hover:after:h-0 group-hover:after:top-1/2">
                             <div className="absolute z-0 inset-0 w-full h-full">
                                 <img src={blog.blogImage} alt="" className="w-full h-full scale-105 transition-transform duration-300 ease-linear group-hover:scale-100 overflow-hidden" />
@@ -30,7 +30,7 @@ const Blog: React.FC = () => {
                                     <span className="text-sm md:text-base text-customRed">
                                         <FontAwesomeIcon icon={faUser} />
                                     </span>
-                                    <span className="text-black/50 dark:text-white/50 md:text-lg capitalize">
+                                    <span className="text-white/60 md:text-lg capitalize">
                                         {blog.by}
                                     </span>
                                 </div>
@@ -38,7 +38,7 @@ const Blog: React.FC = () => {
                                     <span className="text-customRed">
                                         <svg className="w-[0.8em] h-[0.8em]" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z"></path></svg>
                                     </span>
-                                    <span className="text-black/50 dark:text-white/50 md:text-lg">{blog.date}</span>
+                                    <span className="text-white/60 md:text-lg">{blog.date}</span>
                                 </div>
                             </div>
                         </div>
