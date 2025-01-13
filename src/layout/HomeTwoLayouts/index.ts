@@ -7,3 +7,4 @@ export {default as OurWorks} from './OurWork';
 export {default as OurProjects} from './OurProjects';
 export {default as ActiveMembers} from './ActiveMembers';
 export {default as Analytics} from "./Analytics";
+export {default as Blog} from "./Blog";

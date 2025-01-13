@@ -42,8 +42,9 @@ module.exports = {
         '500px': '500px',
       },
       screens: {
-        laptop: '1024px',
-        '1280': '1280px',
+        xxxs: "320px",
+        xxs: "377px",
+        xs: "425px",
         extraExtraLarge: '2000px',
       },
       keyframes: {

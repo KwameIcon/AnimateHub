@@ -1,6 +1,6 @@
 import CountUp from "react-countup";
 import { Card } from "../../../components/Commons/cards";
-import { InView, useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 import { SUCCESSMETRICDATA } from "../../../DATA/HomeOneData/SUCCESSMETRICDATA";
 
 

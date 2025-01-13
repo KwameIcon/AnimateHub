@@ -1,6 +1,6 @@
 import { Showcase } from "../layout/showcase/homeTwoShowcase";
 import { useEffect } from "react";
-import { AboutUsHomeTwo, ActiveMembers, Analytics, AutoScroll, HomeTwoPrice, OurProjects, OurWorks, Services, UserSendProject } from "../layout/HomeTwoLayouts";
+import { AboutUsHomeTwo, ActiveMembers, Analytics, AutoScroll, Blog, HomeTwoPrice, OurProjects, OurWorks, Services, UserSendProject } from "../layout/HomeTwoLayouts";
 
 
 
@@ -8,6 +8,7 @@ import { AboutUsHomeTwo, ActiveMembers, Analytics, AutoScroll, HomeTwoPrice, Our
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ClientTestimonials } from "../layout/homeOneLayouts";
+import Footer from "../layout/footer/Footer";
 
 
 
@@ -72,6 +73,14 @@ const HomeTwoScreen: React.FC<HomeTwoScreenProps> = ({themeMode}) => {
 
             {/* site analytics */}
             <Analytics/>
+
+
+            {/* blog */}
+            <Blog/>
+
+
+            {/* footer */}
+            <Footer themeMode= {themeMode}/>
 
         </section>
     )
