@@ -1,6 +1,6 @@
 import { Showcase } from "../layout/showcase/homeTwoShowcase";
 import { useEffect } from "react";
-import { AboutUsHomeTwo, ActiveMembers, AutoScroll, HomeTwoPrice, OurProjects, OurWorks, Services, UserSendProject } from "../layout/HomeTwoLayouts";
+import { AboutUsHomeTwo, ActiveMembers, Analytics, AutoScroll, HomeTwoPrice, OurProjects, OurWorks, Services, UserSendProject } from "../layout/HomeTwoLayouts";
 
 
 
@@ -69,6 +69,9 @@ const HomeTwoScreen: React.FC<HomeTwoScreenProps> = ({themeMode}) => {
 
             {/* client testimonials */}
             <ClientTestimonials/>
+
+            {/* site analytics */}
+            <Analytics/>
 
         </section>
     )

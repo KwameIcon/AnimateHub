@@ -6,3 +6,4 @@ export {default as AboutUsHomeTwo} from './aboutUs';
 export {default as OurWorks} from './OurWork';
 export {default as OurProjects} from './OurProjects';
 export {default as ActiveMembers} from './ActiveMembers';
+export {default as Analytics} from "./Analytics";
