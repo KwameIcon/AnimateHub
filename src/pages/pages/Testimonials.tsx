@@ -19,7 +19,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ themeMode }) => {
             <BackToTop />
 
             {/* showcase */}
-            <Showcase themeMode={themeMode} page="Projects" />
+            <Showcase themeMode={themeMode} page="Testimonials" />
 
 
             {/* projects */}

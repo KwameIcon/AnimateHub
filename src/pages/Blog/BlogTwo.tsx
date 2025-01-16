@@ -19,7 +19,7 @@ const BlogTwo: React.FC<BlogProps> = ({ themeMode }) => {
             <BackToTop />
 
             {/* showcase */}
-            <Showcase themeMode={themeMode} page="blog" />
+            <Showcase themeMode={themeMode} page="blog" suffix="Details"/>
 
 
             {/* content */}
