@@ -6,6 +6,7 @@ import { About, Contact, HomeOneScreen, HomeTwoScreen, ProjectDetails, Projects,
 import { Pricing, Teams, Testimonials } from './pages/pages';
 import FAQs from './pages/pages/FAQS';
 import Blog from './pages/Blog/Blog';
+import BlogTwo from './pages/Blog/BlogTwo';
 
 
 
@@ -76,6 +77,7 @@ function App() {
           <Route path="/faqs/" element={<FAQs themeMode={themeMode} />} />
           <Route path="/contact/" element={<Contact themeMode={themeMode} />} />
           <Route path="/blog/" element={<Blog themeMode={themeMode} />} />
+          <Route path="/blog/blog-details" element={<BlogTwo themeMode={themeMode} />} />
         </Routes>
       </main>
     </Router>

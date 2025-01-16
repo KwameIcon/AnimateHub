@@ -191,7 +191,7 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
                                     <MiniDropDownCard className="bg-transparent">
                                         <li className="py-2 px-1 hover:bg-customRed hover:text-white" onClick={() => navigate('/blog/')}>Blog List</li>
                                         <div className="w-full h-thinHeight bg-white/10" />
-                                        <li className="py-2 px-1 hover:bg-customRed hover:text-white" onClick={() => navigate('/blog/blog-two')}>Blog Single</li>
+                                        <li className="py-2 px-1 hover:bg-customRed hover:text-white" onClick={() => navigate('/blog/blog-details')}>Blog Single</li>
                                     </MiniDropDownCard>
                                 }
                             </div>
@@ -311,7 +311,7 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
                             <MiniDropDownCard className="hidden group-hover:flex">
                                 <li className="py-2 px-1 hover:bg-customRed text-white/80" onClick={() => navigate('/blog')}>Blog List</li>
                                 <div className="w-full h-thinHeight bg-white/10" />
-                                <li className="py-2 px-1 hover:bg-customRed text-white/80" onClick={() => navigate('/blog/blog-two')}>Blog Single</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80" onClick={() => navigate('/blog/blog-details')}>Blog Single</li>
                             </MiniDropDownCard>
                         </div>
                     </li>
