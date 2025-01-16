@@ -43,7 +43,7 @@ const BlogTwoContent: React.FC = () => {
                 <p className='text-black/70 dark:text-white/70 leading-relaxed text-lg'>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis non, viverra laoreet augue mattis.Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis non, viverra laoreet augue mattis ullamcorper posuere viverra laoreet augue mattis.</p>
             </div>
 
-            <div className='w-full rounded bg-pink-50 dark:bg-graphiteBlack grid grid-cols-1 place-items-center gap-10 p-10'>
+            <div className='w-full rounded bg-pink-50 dark:bg-graphiteBlack grid grid-cols-1 place-items-center gap-10 p-5 md:p-10'>
                 <div className='w-12 h-12 rounded-full bg-customRed/30 dark:bg-ebony flex items-center justify-center text-customRed'>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"></path></svg>
                 </div>
@@ -60,7 +60,7 @@ const BlogTwoContent: React.FC = () => {
 
             <p className='w-full text-black/50 dark:text-white/50 leading-relaxed text-lg'>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis non.</p>
 
-            <div className='w-full h-[26rem] rounded overflow-hidden'>
+            <div className='w-full h-auto md:h-[26rem] rounded overflow-hidden'>
                 <img src={Blog1} alt="" className='w-full h-full' />
             </div>
 
@@ -69,11 +69,11 @@ const BlogTwoContent: React.FC = () => {
             <p className='w-full text-black/50 dark:text-white/50 leading-relaxed text-lg'>Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis, viverra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis non.</p>
 
 
-            <div className='w-full h-20 bg-pink-50 dark:bg-graphiteBlack flex justify-between items-center px-10 rounded'>
-                <div className='flex gap-6 items-center justify-center'>
+            <div className='w-full h-auto md:h-20 bg-pink-50 dark:bg-graphiteBlack flex flex-wrap justify-between items-center px-5 py-3 gap-3 md:px-10 rounded'>
+                <div className='flex gap-2 md:gap-6 items-center justify-center'>
                     <svg className='fill-customRed' stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M345 39.1L472.8 168.4c52.4 53 52.4 138.2 0 191.2L360.8 472.9c-9.3 9.4-24.5 9.5-33.9 .2s-9.5-24.5-.2-33.9L438.6 325.9c33.9-34.3 33.9-89.4 0-123.7L310.9 72.9c-9.3-9.4-9.2-24.6 .2-33.9s24.6-9.2 33.9 .2zM0 229.5V80C0 53.5 21.5 32 48 32H197.5c17 0 33.3 6.7 45.3 18.7l168 168c25 25 25 65.5 0 90.5L277.3 442.7c-25 25-65.5 25-90.5 0l-168-168C6.7 262.7 0 246.5 0 229.5zM144 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
 
-                    <ul className='flex items-center justify-center gap-3 text-lg text-black/70 dark:text-white/70'>
+                    <ul className='flex flex-wrap items-center justify-center gap-1 md:gap-3 text-lg text-black/70 dark:text-white/70'>
                         <li className='transition-colors duration-300 ease-linear hover:text-customRed cursor-pointer'>Marketing,</li>
                         <li className='transition-colors duration-300 ease-linear hover:text-customRed cursor-pointer'>branding,</li>
                         <li className='transition-colors duration-300 ease-linear hover:text-customRed cursor-pointer'>corporate,</li>
@@ -89,8 +89,8 @@ const BlogTwoContent: React.FC = () => {
             </div>
 
 
-            <div className='w-full flex items-start justify-start gap-10'>
-                <div className='w-52 h-24 rounded overflow-hidden'>
+            <div className='w-full flex flex-col md:flex-row items-start justify-start gap-10'>
+                <div className='w-auto md:w-52 h-24 rounded overflow-hidden'>
                     <img src={Author1} alt="" className='w-full h-full' />
                 </div>
                 <div className='grid grid-cols-1 gap-1'>
@@ -113,25 +113,22 @@ const BlogTwoContent: React.FC = () => {
                 <p className='w-full text-black/50 dark:text-white/50 leading-relaxed text-lg'>You must have to log in for comment</p>
                 <form action="" className="w-full lg:w-full grid grid-cols-1 place-items-center gap-7">
                     <div className="w-full grid grid-cols-1 lg:grid-cols-2 place-items-center gap-5">
-                        <div className="w-full h-14 rounded overflow-hidden  flex items-center justify-center">
-                            <input type="text" name="name" className="w-full  px-5 border border-black/30 dark:border-white/30 outline-none border-none h-full" placeholder="Your name" />
+                        <div className="w-full h-16 rounded overflow-hidden  flex items-center justify-center">
+                            <input type="email" name="email" className="w-full  px-5 border bg-transparent border-black/30 dark:border-white/30 outline-none h-full" placeholder="Your email" />
                         </div>
-                        <div className="w-full h-14 rounded overflow-hidden  flex items-center justify-center">
-                            <input type="email" name="email" className="w-full  px-5 border border-black/30 dark:border-white/30 outline-none border-none h-full" placeholder="Your email" />
+                        <div className="w-full h-16 rounded overflow-hidden  flex items-center justify-center">
+                            <input type="number" name="phone" className="w-full  px-5 bg-transparent border border-black/30 dark:border-white/30 outline-none h-full" placeholder="Telephone" />
                         </div>
                     </div>
-                    <div className="w-full grid grid-cols-1 lg:grid-cols-2 place-items-center gap-5">
-                        <div className="w-full h-14 rounded overflow-hidden  flex items-center justify-center">
-                            <input type="text" name="subject" className="w-full  px-5 border border-black/30 dark:border-white/30 outline-none border-none h-full" placeholder="subject" />
-                        </div>
-                        <div className="w-full h-14 rounded overflow-hidden  flex items-center justify-center">
-                            <input type="number" name="phone" className="w-full  px-5 border border-black/30 dark:border-white/30 outline-none border-none h-full" placeholder="telephone" />
+                    <div className="w-full grid grid-cols-1 place-items-center gap-5">
+                        <div className="w-full h-16 rounded overflow-hidden  flex items-center justify-center">
+                            <input type="text" name="subject" className="w-full  px-5 bg-transparent border border-black/30 dark:border-white/30 outline-none h-full" placeholder="subject" />
                         </div>
                     </div>
                     <div className="w-full h-36 lg:h-48 rounded overflow-hidden grid grid-cols-1 place-items-center gap-5">
-                        <textarea name="message" placeholder="Message" className="w-full h-full bg-pink-50 dark:bg-graphiteBlack outline-none border-none p-5" ></textarea>
+                        <textarea name="message" placeholder="Message" className="w-full h-full bg-transparent border border-black/30 dark:border-white/30 outline-none p-5" ></textarea>
                     </div>
-                    <button type="submit" className="w-56 h-[3.8rem] rounded bg-customRed flex items-center justify-center uppercase font-bold font-Oswald relative overflow-hidden transition-all duration-300 ease-linear z-10 after:absolute after:top-0 after:right-0 after:h-full after:w-0 after:bg-customRedDeep after:transition-all after:duration-300 after:ease-linear hover:after:left-0 hover:after:w-full after:z-0" ><span className="relative z-10 text-white">send a message</span></button>
+                    <button type="submit" className="w-full h-16 rounded bg-customRed flex items-center justify-center uppercase font-bold font-Teko text-2xl relative overflow-hidden transition-all duration-300 ease-linear z-10 after:absolute after:top-0 after:right-0 after:h-full after:w-0 after:bg-customRedDeep after:transition-all after:duration-300 after:ease-linear hover:after:left-0 hover:after:w-full after:z-0" ><span className="relative z-10 text-white">send a message</span></button>
                 </form>
             </div>
 

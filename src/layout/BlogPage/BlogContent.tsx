@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import mainImage1 from '../../assets/images/others/blog-lg-1.webp';
 import { faCommentDots, faFolderOpen, faUser } from '@fortawesome/free-regular-svg-icons';
 import { BLOGDATA } from '../../DATA/BLOGPAGEDATA/BLOGDATA';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
 
 
 const BlogContent: React.FC = () => {
@@ -45,6 +46,16 @@ const BlogContent: React.FC = () => {
                     <p className='text-black/70 dark:text-white/70 leading-relaxed text-lg'>{blog.Info}</p>
                 </div>
             ))}
+
+
+            <div className='w-full items-center justify-center my-10'>
+                <ul className='w-1/2 m-auto flex gap-5 items-center'>
+                    <li className='w-16 h-16 rounded-full bg-pink-50 dark:bg-graphiteBlack text-3xl  font-Teko flex items-center justify-center cursor-pointer'>01</li>
+                    <li className='w-16 h-16 rounded-full bg-pink-50 dark:bg-graphiteBlack text-3xl  font-Teko flex items-center justify-center cursor-pointer'>02</li>
+                    <li className='w-16 h-16 rounded-full bg-pink-50 dark:bg-graphiteBlack text-3xl  font-Teko flex items-center justify-center cursor-pointer'>03</li>
+                    <li className='w-16 h-16 rounded-full text-3xl  font-Teko flex items-center justify-center bg-customRed text-white cursor-pointer'><FontAwesomeIcon icon={faArrowRightLong}/></li>
+                </ul>
+            </div>
 
         </section>
     )
