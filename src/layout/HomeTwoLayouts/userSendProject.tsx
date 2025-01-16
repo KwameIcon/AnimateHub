@@ -20,7 +20,7 @@ const UserSendProject: React.FC = () => {
             <div className="w-full xl:w-11/12 m-auto h-full px-4 py-10 relative z-10 flex flex-col xl:flex-row items-center justify-center" >
                 <div className="w-full grid grid-cols-1 gap-5">
                     <h1 className="w-full md:w-1/2 lg:w-[35%] xl:w-3/5 text-3xl md:text-4xl lg:text-5xl capitalize font-extrabold font-Oswald leading-relaxed md:leading-relaxed lg:leading-relaxed text-white" >leave the handy work to us</h1>
-                    <p className=" leading-loose xl:w-4/5">It is long to established fact that a reader will be distracted by the readable content of a page when looking at it layout</p>
+                    <p className=" leading-loose xl:w-4/5 text-lg text-white/70">It is long to established fact that a reader will be distracted by the readable content of a page when looking at it layout</p>
                 </div>
                 <form action="" className="w-full grid grid-cols-1 gap-5 mt-10">
                     <div className="w-full m-auto grid grid-cols-1 md:flex md:items-center md:justify-center gap-5">

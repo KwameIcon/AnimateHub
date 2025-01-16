@@ -141,11 +141,7 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
 
                             <div className={`${currentSubMenu.serviceSub ? 'text-customRed' : ''} w-full flex items-center justify-between px-2`}>
                                 <span>Services</span>
-                                {currentSubMenu.serviceSub ?
-                                    <FontAwesomeIcon icon={faAngleUp} />
-                                    :
-                                    <FontAwesomeIcon icon={faAngleDown} />
-                                }
+                                <FontAwesomeIcon icon={currentSubMenu.serviceSub ? faAngleUp : faAngleDown} />
                             </div>
 
                             <div className="w-full overflow-hidden h-auto top-14 -left-1 pl-5">
@@ -216,21 +212,21 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
                             <div className="overflow-hidden h-auto top-14 -left-1 pl-5">
                                 {currentSubMenu.pagesSub &&
                                     <MiniDropDownCard className="bg-transparent">
-                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white">Testimonial</li>
+                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white"  onClick={() => navigate('/testimonials')}>Testimonial</li>
                                         <hr />
-                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white">Team</li>
+                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white"  onClick={() => navigate('/teams')}>Team</li>
                                         <hr />
-                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white">Pricing</li>
+                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white"  onClick={() => navigate('/pricing')}>Pricing</li>
                                         <hr />
-                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white">FAQ</li>
+                                        <li className="py-2 px-1 rounded hover:bg-customRed hover:text-white"  onClick={() => navigate('/faqs')}>FAQ</li>
                                     </MiniDropDownCard>
                                 }
                             </div>
                         </li>
 
 
-                        <li className="hover:text-customRed w-full capitalize cursor justify-between-px-2-full hover:duration-75 font-bold py-4 pl-4 " onClick={() => handleCurrentSubMenuDisplay('contact')}>
-                            <span className={currentSubMenu.contact ? 'text-customRed' : ''}>Contact</span>
+                        <li className="hover:text-customRed w-full capitalize cursor justify-between-px-2-full hover:duration-75 font-bold py-4 pl-4 " onClick={() => {handleCurrentSubMenuDisplay('contact'); navigate('/contact')}}>
+                            <span className={currentSubMenu.contact ? 'text-customRed' : ''} >Contact</span>
                         </li>
 
                         {/* contact */}
@@ -341,12 +337,12 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
                     </li>
 
 
-                    <li className="hover:text-customRed capitalize cursor-pointer hover:duration-75 font-semibold py-4 px-2 ">
+                    <li className="hover:text-customRed capitalize cursor-pointer hover:duration-75 font-semibold py-4 px-2 "   onClick={() => navigate('/contact')}>
                         <span>Contact</span>
                     </li>
                 </ul>
 
-                {/* contact */}
+                {/* contact lines */}
                 {displayContactInfo && (<div className="flex items-center justify-start space-x-2 pl-10 extraExtraLarge:pl-20 laptop:hidden xl:flex ">
                     <div className=" w-14 h-14 flex items-center justify-center relative">
                         <FontAwesomeIcon icon={faCommentDots} className="text-3xl absolute top-0 z-0 " />

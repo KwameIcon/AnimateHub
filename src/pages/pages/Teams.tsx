@@ -1,33 +1,26 @@
 import { BackToTop } from "../../components/Commons/backToTop";
 import Footer from "../../layout/footer/Footer";
-import { ClientTestimonials, UserAskQuestion } from "../../layout/homeOneLayouts";
+import { ActiveMembers } from "../../layout/homeOneLayouts";
 import Showcase from "../../layout/showcase/AboutPage/Showcase";
 
-
-// interface
-interface TestimonialsProps {
+interface TeamsProps{
     themeMode: string;
 }
 
+const Teams: React.FC<TeamsProps> = ({themeMode}) => {
 
-const Testimonials: React.FC<TestimonialsProps> = ({ themeMode }) => {
-
-    return (
+    return(
         <section className="w-screen min-h-screen extraExtraLarge:w-3/5 m-auto overflow-hidden relative">
 
             {/* back to top button */}
             <BackToTop />
 
             {/* showcase */}
-            <Showcase themeMode={themeMode} page="Projects" />
+            <Showcase themeMode={themeMode} page="Team" />
 
 
-            {/* projects */}
-            <ClientTestimonials grid = {true}/>
-
-
-            {/* ask question */}
-            <UserAskQuestion/>
+            {/* Teams */}
+            <ActiveMembers grid = {true} />
 
             {/* footer */}
             <Footer themeMode= {themeMode} />
@@ -37,4 +30,4 @@ const Testimonials: React.FC<TestimonialsProps> = ({ themeMode }) => {
     )
 }
 
-export default Testimonials;
+export default Teams;

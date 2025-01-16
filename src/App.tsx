@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeButton } from './components/Commons/buttons';
-import { About, HomeOneScreen, HomeTwoScreen, Projects, Service } from './pages';
-import Testimonials from './pages/pages/Testimonials';
+import { About, Contact, HomeOneScreen, HomeTwoScreen, Projects, Service, ServiceTwo } from './pages';
+import { Pricing, Teams, Testimonials } from './pages/pages';
+import FAQs from './pages/pages/FAQS';
 
 
 
@@ -64,9 +65,14 @@ function App() {
           <Route path="/" element={<HomeOneScreen themeMode={themeMode} setThemeMode={setThemeMode} />} />
           <Route path="/home-two" element={<HomeTwoScreen themeMode={themeMode} />} />
           <Route path="/about" element={<About themeMode={themeMode} />} />
-          <Route path="/service/:serviceDetail?" element={<Service themeMode={themeMode} />} />
+          <Route path="/service/" element={<Service themeMode={themeMode} />} />
+          <Route path="/service/single" element={<ServiceTwo themeMode={themeMode} />} />
           <Route path="/projects/:projectDetail?" element={<Projects themeMode={themeMode} />} />
           <Route path="/testimonials/" element={<Testimonials themeMode={themeMode} />} />
+          <Route path="/teams/" element={<Teams themeMode={themeMode} />} />
+          <Route path="/pricing/" element={<Pricing themeMode={themeMode} />} />
+          <Route path="/faqs/" element={<FAQs themeMode={themeMode} />} />
+          <Route path="/contact/" element={<Contact themeMode={themeMode} />} />
         </Routes>
       </main>
     </Router>

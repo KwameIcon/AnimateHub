@@ -12,12 +12,14 @@ module.exports = {
         'BebasNeue': 'Bebas Neue',
         'Roboto': 'Roboto',
         'SpaceGrotesk': 'Space Grotesk',
+        'Teko': 'Teko',
         varuna: [
           'varuna', "sans-serif"
         ]
       },
       colors: {
         'customRed': 'rgba(185, 18, 2, 1)',
+        'customRedDeep': 'rgba(165, 10, 0, 1)',
         'graphiteBlack':'rgba(26,26,28,255)',
         'ebony':'rgba(20, 20, 22, 255)',
       },

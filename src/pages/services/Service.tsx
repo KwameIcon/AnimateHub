@@ -1,7 +1,7 @@
-import { BackToTop } from "../components/Commons/backToTop";
-import Footer from "../layout/footer/Footer";
-import {KeyOffers } from "../layout/homeOneLayouts";
-import Showcase from "../layout/showcase/AboutPage/Showcase";
+import { BackToTop } from "../../components/Commons/backToTop";
+import Footer from "../../layout/footer/Footer";
+import {KeyOffers } from "../../layout/homeOneLayouts";
+import Showcase from "../../layout/showcase/AboutPage/Showcase";
 
 // interface
 interface AboutProps {

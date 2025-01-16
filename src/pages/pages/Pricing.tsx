@@ -1,32 +1,34 @@
 import { BackToTop } from "../../components/Commons/backToTop";
 import Footer from "../../layout/footer/Footer";
-import { ClientTestimonials, UserAskQuestion } from "../../layout/homeOneLayouts";
+import { UserAskQuestion } from "../../layout/homeOneLayouts";
+import { HomeTwoPrice } from "../../layout/HomeTwoLayouts";
 import Showcase from "../../layout/showcase/AboutPage/Showcase";
 
 
-// interface
-interface TestimonialsProps {
+
+interface PricingProps{
     themeMode: string;
 }
 
 
-const Testimonials: React.FC<TestimonialsProps> = ({ themeMode }) => {
+const Pricing: React.FC<PricingProps> = ({themeMode}) => {
+    
 
-    return (
+    return(
         <section className="w-screen min-h-screen extraExtraLarge:w-3/5 m-auto overflow-hidden relative">
 
             {/* back to top button */}
             <BackToTop />
 
             {/* showcase */}
-            <Showcase themeMode={themeMode} page="Projects" />
+            <Showcase themeMode={themeMode} page="Pricing" />
 
 
-            {/* projects */}
-            <ClientTestimonials grid = {true}/>
+            {/* pricing */}
+            <HomeTwoPrice />
 
 
-            {/* ask question */}
+            {/* question */}
             <UserAskQuestion/>
 
             {/* footer */}
@@ -37,4 +39,4 @@ const Testimonials: React.FC<TestimonialsProps> = ({ themeMode }) => {
     )
 }
 
-export default Testimonials;
+export default Pricing;
