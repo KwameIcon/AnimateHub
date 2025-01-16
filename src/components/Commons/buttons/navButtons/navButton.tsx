@@ -250,7 +250,7 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
             <div className="hidden lg:flex md:items-center md:justify-center md:space-x-2 md:dark:from-ebony/75">
                 <ul className="md:flex md:items-center md:justify-center md:space-x-2">
 
-                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group">
+                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group text-lg">
                         <div className="hover:text-customRed hover:duration-75 relative dark:from-ebony/75">
                             <span>Home</span>
                             <FontAwesomeIcon icon={faAngleDown} />
@@ -269,7 +269,7 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
                     <li className="hover:text-customRed capitalize cursor-pointer hover:duration-75 font-semibold py-4 px-2 "onClick={() => navigate('/about')} >
                         <span>About</span>
                     </li>
-                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group">
+                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group text-lg">
                         <div className="hover:text-customRed hover:duration-75 relative top-2/4">
                             <span>Services</span>
                             <FontAwesomeIcon icon={faAngleDown} />
@@ -285,7 +285,7 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
                     </li>
 
 
-                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group">
+                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group text-lg">
                         <div className="hover:text-customRed hover:duration-75 relative top-2/4">
                             <span>Projects</span>
                             <FontAwesomeIcon icon={faAngleDown} />
@@ -301,7 +301,7 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
                     </li>
 
 
-                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group">
+                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group text-lg">
                         <div className="hover:text-customRed hover:duration-75 relative top-2/4">
                             <span>Blogs</span>
                             <FontAwesomeIcon icon={faAngleDown} />
@@ -317,7 +317,7 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
                     </li>
 
 
-                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group">
+                    <li className="capitalize cursor-pointer font-semibold py-4 px-2 flex flex-col items-start justify-center space-x-1 relative group text-lg">
                         <div className="hover:text-customRed hover:duration-75 relative top-2/4">
                             <span>Pages</span>
                             <FontAwesomeIcon icon={faAngleDown} />
