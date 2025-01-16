@@ -1,15 +1,15 @@
 import { BackToTop } from "../../components/Commons/backToTop";
 import Footer from "../../layout/footer/Footer";
 import Showcase from "../../layout/showcase/AboutPage/Showcase";
+import { ClientDetails } from "../../layout/projects";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 
 // images
 import Image1 from '../../assets/images/others/main-image-1.webp';
 import Image2 from '../../assets/images/others/image-2.webp';
 import Image3 from '../../assets/images/others/image-3 (1).webp';
-import { ClientDetails } from "../../layout/projects";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight, faCheck } from "@fortawesome/free-solid-svg-icons";
 
 
 interface ProjectDetailsProps {

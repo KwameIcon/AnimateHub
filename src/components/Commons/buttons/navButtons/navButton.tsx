@@ -189,9 +189,9 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
                             <div className="overflow-hidden h-auto top-14 -left-1 pl-5">
                                 {currentSubMenu.blogsSub &&
                                     <MiniDropDownCard className="bg-transparent">
-                                        <li className="py-2 px-1 hover:bg-customRed hover:text-white">Blog List</li>
+                                        <li className="py-2 px-1 hover:bg-customRed hover:text-white" onClick={() => navigate('/blog/')}>Blog List</li>
                                         <div className="w-full h-thinHeight bg-white/10" />
-                                        <li className="py-2 px-1 hover:bg-customRed hover:text-white">Blog Single</li>
+                                        <li className="py-2 px-1 hover:bg-customRed hover:text-white" onClick={() => navigate('/blog/blog-two')}>Blog Single</li>
                                     </MiniDropDownCard>
                                 }
                             </div>
@@ -309,9 +309,9 @@ const NavButtons: React.FC<NavButtonsProps> = ({ displayContactInfo = true }) =>
 
                         <div className="overflow-hidden h-auto absolute top-14 -left-1">
                             <MiniDropDownCard className="hidden group-hover:flex">
-                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Blog List</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80" onClick={() => navigate('/blog')}>Blog List</li>
                                 <div className="w-full h-thinHeight bg-white/10" />
-                                <li className="py-2 px-1 hover:bg-customRed text-white/80">Blog Single</li>
+                                <li className="py-2 px-1 hover:bg-customRed text-white/80" onClick={() => navigate('/blog/blog-two')}>Blog Single</li>
                             </MiniDropDownCard>
                         </div>
                     </li>

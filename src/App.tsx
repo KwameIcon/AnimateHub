@@ -5,6 +5,7 @@ import { ThemeButton } from './components/Commons/buttons';
 import { About, Contact, HomeOneScreen, HomeTwoScreen, ProjectDetails, Projects, Service, ServiceTwo } from './pages';
 import { Pricing, Teams, Testimonials } from './pages/pages';
 import FAQs from './pages/pages/FAQS';
+import Blog from './pages/Blog/Blog';
 
 
 
@@ -74,6 +75,7 @@ function App() {
           <Route path="/pricing/" element={<Pricing themeMode={themeMode} />} />
           <Route path="/faqs/" element={<FAQs themeMode={themeMode} />} />
           <Route path="/contact/" element={<Contact themeMode={themeMode} />} />
+          <Route path="/blog/" element={<Blog themeMode={themeMode} />} />
         </Routes>
       </main>
     </Router>

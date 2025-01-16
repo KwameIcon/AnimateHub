@@ -49,7 +49,7 @@ const Showcase: React.FC<ShowcaseProps> = ({ themeMode, page, suffix, }) => {
                     <img src={bgImage} alt="background image" className="w-full h-full" />
                 </div>
                 <div className="absolute w-full z-10 bottom-[42%] px-10 md:px-16 pr-20 grid grid-cols-1 place-items-center gap-10 md:flex md:items-center md:justify-between capitalize font-bold font-Oswald">
-                    <h1 className="text-3xl w-full">{page} {suffix}</h1>
+                    <h1 className="text-3xl w-full text-center md:text-left">{page} {suffix}</h1>
                     <div className="text-2xl flex gap-3 items-center">
                         <span className="cursor-pointer transition-colors duration-300 ease-linear hover:text-customRed" onClick={() => navigate('/')}>home</span>
                         <span>/</span>
