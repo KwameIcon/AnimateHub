@@ -85,7 +85,7 @@ const ActiveMembers: React.FC<ActiveMembersProps> = ({ grid = false }) => {
 
                                 {/* card */}
                                 {ACTIVEMEMBERS.map((member) => (
-                                    <div className='w-screen shrink-0 md:w-[26rem] h-[25rem] md:h-[33rem] mt-10 md:mt-20 flex flex-col items-start overflow-hidden relative' >
+                                    <div className='w-screen shrink-0 md:w-[26rem] h-[25rem] md:h-[33rem] mt-10 md:mt-20 flex flex-col items-start overflow-hidden relative' key={member.id} >
                                         <div className='w-[90%] h-[75%] md:h-[79%] relative z-10 overflow-hidden'>
 
                                             <div className='absolute z-0 left-0 top-0 w-full h-full overflow-hidden group'>

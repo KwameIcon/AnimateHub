@@ -77,7 +77,7 @@ const ClientTestimonials: React.FC<ClientTestimonialsProps> = ({grid = false}) =
                                         <div className='w-full md:w-5/12 h-[40%] -mt-10 md:mt-0 mb-5 md:mb-0 md:h-full flex items-start justify-start md:pl-0 md:justify-center relative'>
                                             <img src={card.image} alt="" className='md:w-4/5 lg:h-5/6 lg:m-auto rounded' />
                                             <div className='absolute left-[23%] md:left-[40%] bottom-2 md:bottom-0 w-11 h-11 flex items-center justify-center rounded-full bg-customRed border border-red-200/50'>
-                                                <svg className='w-6 h-6 fill-white' stroke-width="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                                <svg className='w-6 h-6 fill-white' strokeWidth="0" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                                                     {card.path.map((path, i) => (
                                                         <path d={path} key={i}></path>
                                                     ))}

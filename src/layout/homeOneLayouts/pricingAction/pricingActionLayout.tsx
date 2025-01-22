@@ -56,7 +56,7 @@ const PricingActionLayout: React.FC = () => {
                                 {card.benefits.map((item, i) => (
                                     <li className="flex items-center space-x-4" key={i}>
                                         <span className="fill-customRed">
-                                            <svg stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d={card.checkIcon}></path></svg>
+                                            <svg strokeWidth="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d={card.checkIcon}></path></svg>
                                         </span>
                                         <p className=" dark:text-white dark:text-opacity-70">{item}</p>
                                     </li>
