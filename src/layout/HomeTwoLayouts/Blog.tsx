@@ -1,5 +1,4 @@
 import { Card } from "../../components/Commons/cards";
-import P from "../../assets/images/others/blog-4.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faUser } from "@fortawesome/free-solid-svg-icons";
 import { BLOGDATA } from "../../DATA/HomeTwoData/BLOGDATA";

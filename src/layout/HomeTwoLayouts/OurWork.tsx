@@ -13,7 +13,7 @@ const OurWorks: React.FC = () => {
             <div className="w-fit flex items-center justify-start space-x-10 md:space-x-5 xl:space-x-16">
                 {/* card 1 */}
                 {OURWORKSDATA.map((data) => (
-                    <Card className="items-start !w-[90vw] m-auto !bg-gray-50 !shadow dark:!shadow-2xl dark:!bg-graphiteBlack md:!w-[340px] lg:!w-[350px] xl:!w-[400px] extraExtraLarge:!w-[425px]" dataAos="fade-up" data-aos='' dataAosDelay="0" key={data.id}>
+                    <Card className="items-start !w-[90vw] m-auto !bg-gray-50 !shadow dark:!shadow-2xl dark:!bg-graphiteBlack md:!w-[340px] lg:!w-[350px] xl:!w-[400px] extraExtraLarge:!w-[425px]" dataAos="fade-up" dataAosDelay="0" key={data.id}>
                         <div className="w-full flex items-end justify-start gap-3 mb-10 md:mb-5">
                             <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-customRed relative">
                                 <svg className="w-[60px] h-[61px] md:w-[65px] md:h-[66px] fill-white absolute top-1/4 -left-3" xmlns="http://www.w3.org/2000/svg">

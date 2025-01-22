@@ -1,5 +1,5 @@
 import { BackToTop } from "../../components/Commons/backToTop";
-import { BlogContent, BlogTwoContent, SideBar } from "../../layout/BlogPage";
+import { BlogTwoContent, SideBar } from "../../layout/BlogPage";
 import Footer from "../../layout/footer/Footer";
 import Showcase from "../../layout/showcase/AboutPage/Showcase";
 

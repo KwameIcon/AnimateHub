@@ -27,7 +27,7 @@ const HomeTwoScreen: React.FC<HomeTwoScreenProps> = ({ themeMode }) => {
     // aos animation initialization
     useEffect(() => {
         AOS.init({
-            duration: 2000,
+            duration: 200,
         });
     })
 

@@ -32,7 +32,7 @@ const KeyOffers: React.FC<KeyOffersProps> = ({limit = "limited"}) => {
 
 
     useEffect(() => {
-        Aos.init({duration:3000})
+        Aos.init({duration:200})
     },[])
 
     useEffect(() => {
@@ -41,7 +41,7 @@ const KeyOffers: React.FC<KeyOffersProps> = ({limit = "limited"}) => {
         }else{
             setData(KEYOFFERSDATA);
         }
-    })
+    },[limit])
 
 
     return(
@@ -50,7 +50,7 @@ const KeyOffers: React.FC<KeyOffersProps> = ({limit = "limited"}) => {
 
             {/* card */}
             {data.map((offer) => (
-                <Card dataAos="fade-up" data-aos='' dataAosDelay="0" key={offer.id}>
+                <Card dataAos="fade-up" dataAosDelay="0" key={offer.id}>
 
                     {/* border bottom */}
                     <div className="absolute bottom-0 w-full left-0 h-[2px]">

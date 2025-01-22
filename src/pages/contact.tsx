@@ -1,9 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BackToTop } from "../components/Commons/backToTop";
 import Footer from "../layout/footer/Footer";
 import Showcase from "../layout/showcase/AboutPage/Showcase";
-import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Map from "../components/map/Map";
 import ContactUs from "../layout/ContactUs/ContactUs";
 

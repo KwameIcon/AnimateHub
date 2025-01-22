@@ -28,7 +28,7 @@ const ThemeButton: React.FC<ThemeButtonProps> = ({ setDarkMode, setLightMode, se
   useEffect(() => {
     const getTheme = localStorage.getItem("theme");
     setThemeMode(getTheme || "system");
-  }, []);
+  });
 
 
 

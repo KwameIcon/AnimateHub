@@ -1,6 +1,5 @@
 import { BackToTop } from "../../components/Commons/backToTop";
 import Footer from "../../layout/footer/Footer";
-import { KeyOffers } from "../../layout/homeOneLayouts";
 import { ServiceContent, ServiceSidebar } from "../../layout/services";
 import Showcase from "../../layout/showcase/AboutPage/Showcase";
 

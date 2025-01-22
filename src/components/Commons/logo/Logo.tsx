@@ -1,6 +1,5 @@
 
 // logo image
-import { useEffect, useState } from 'react'
 import whiteLogo from '../../../assets/images/logo/logo.webp'
 import darkLogo from '../../../assets/images/logo/logo1.webp'
 

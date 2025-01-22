@@ -35,7 +35,7 @@ const SidebarSlider: React.FC<SidebarSliderProps> = ({className, themeMode, setI
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         }
-    }, [])
+    })
 
 
 

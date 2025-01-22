@@ -1,13 +1,13 @@
 import CountUp from "react-countup";
 import { ANALYTICSDATA } from "../../DATA/HomeTwoData/ANALYTICSDATA";
-import { InView, useInView } from "react-intersection-observer";
+import { useInView } from "react-intersection-observer";
 
 
 
 const Analytics: React.FC = () => {
 
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0,
     })
 
     return (

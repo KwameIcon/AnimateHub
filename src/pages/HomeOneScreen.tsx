@@ -31,7 +31,7 @@ const HomeOneScreen: React.FC<HomeOneScreenProps> = ({themeMode, setThemeMode}) 
 
 
     useEffect(() => {
-        Aos.init({duration: 2000});
+        Aos.init({duration: 200});
     },[])
 
 

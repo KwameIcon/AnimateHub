@@ -9,7 +9,6 @@ import { ACTIVEMEMBERS } from '../../../DATA/HomeOneData/ACTIVEMEMBERS'
 
 
 // AOS animation
-import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 

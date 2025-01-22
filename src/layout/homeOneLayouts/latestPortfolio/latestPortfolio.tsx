@@ -39,7 +39,7 @@ const LatestPortfolio: React.FC<LatestPortfolioProps> = ({level, limit = "limite
         }else{
             setData(PORTFOLIODATA);
         }
-    })
+    },[limit])
 
 
 

@@ -1,4 +1,3 @@
-import { Card } from "../../../components/Commons/cards";
 import { BLOGTAGSDATA } from "../../../DATA/BLOGPAGEDATA/BLOGDATA";
 
 

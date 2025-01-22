@@ -46,7 +46,7 @@ const Showcase: React.FC<ShowcaseProps> = ({ themeMode, page, suffix, }) => {
 
                 {/* bg image */}
                 <div className="absolute inset-0 w-full h-full">
-                    <img src={bgImage} alt="background image" className="w-full h-full" />
+                    <img src={bgImage} alt="background" className="w-full h-full" />
                 </div>
                 <div className="absolute w-full z-10 bottom-[42%] px-10 md:px-16 pr-20 grid grid-cols-1 place-items-center gap-10 md:flex md:items-center md:justify-between capitalize font-bold font-Oswald">
                     <h1 className="text-3xl w-full text-center md:text-left">{page} {suffix}</h1>

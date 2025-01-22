@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-import mainImage1 from '../../assets/images/others/blog-lg-1.webp';
 import { faCommentDots, faFolderOpen, faUser } from '@fortawesome/free-regular-svg-icons';
 import { BLOGDATA } from '../../DATA/BLOGPAGEDATA/BLOGDATA';
 import { faArrowRightLong, faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -15,7 +14,7 @@ const BlogContent: React.FC = () => {
             {BLOGDATA.map((blog) => (
                 <div className='w-full h-auto grid grid-cols-1 gap-10' key={blog.id}>
                     <div className='w-full h-64 md:h-[38rem] lg:h-[30rem] xl:h-[38rem] overflow-hidden rounded relative z-0 group after:absolute after:z-[1] after:bottom-0 after:w-full after:h-0 after:bg-gray-200/20 after:opacity-100 after:transition-all after:duration-300 after:ease-linear hover:after:top-0 hover:after:h-full hover:after:opacity-10'>
-                        <img src={blog.Image} alt="main image" className='w-full h-full scale-110 transition-transform duration-300 ease-linear group-hover:scale-100' />
+                        <img src={blog.Image} alt="Blog" className='w-full h-full scale-110 transition-transform duration-300 ease-linear group-hover:scale-100' />
                     </div>
 
                     <ul className='w-full flex flex-wrap items-center gap-5'>

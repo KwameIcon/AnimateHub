@@ -1,6 +1,6 @@
 import { faClose, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { use, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 
 

@@ -19,7 +19,7 @@ const PricingActionLayout: React.FC = () => {
     // animate element in
     useEffect(() => {
         Aos.init({
-            duration: 2000,
+            duration: 1000,
         })
     })
 
@@ -40,7 +40,7 @@ const PricingActionLayout: React.FC = () => {
             <div className="w-full m-auto mt-10 flex flex-col items-center justify-center space-y-10" >
                 {/* card */}
                 {PRICEDATA.map((card) => (
-                    <div className="w-full h-[35rem] md:h-96 lg:h-64 m-auto border dark:border-white border-opacity-50 dark:border-opacity-10 overflow-hidden flex flex-wrap items-center justify-start" data-aos="fade-up" data-aos-delay="100" key={card.id}>
+                    <div className="w-full h-[35rem] md:h-96 lg:h-64 m-auto border dark:border-white border-opacity-50 dark:border-opacity-10 overflow-hidden flex flex-wrap items-center justify-start" data-aos="fade-up" data-aos-delay="0" key={card.id}>
                         <div className="w-full lg:w-[26%] xl:w-[24%] h-[40%] lg:h-full flex flex-col justify-center space-y-9 lg:space-y-5 xl:space-y-9 p-5 px-12 lg:px-5 xl:px-12 border-b md:border-r border-white border-opacity-10">
                             <div className="">
                                 <h1 className="uppercase text-xl md:text-2xl font-bold">{card.plan}</h1>

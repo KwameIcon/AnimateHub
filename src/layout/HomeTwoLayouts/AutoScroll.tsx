@@ -1,18 +1,18 @@
 import { useEffect } from "react";
 import Splide from '@splidejs/splide';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-import '@splidejs/splide/dist/css/splide.min.css'; // Import Splide styles
+import '@splidejs/splide/dist/css/splide.min.css';
 
 const AutoScrollCard: React.FC = () => {
     useEffect(() => {
         // Create the Splide instance and initialize AutoScroll extension
         const splide = new Splide('.splide', {
-            type: 'loop',          // Infinite loop
-            drag: 'free',          // Free dragging (optional)
-            focus: 'center',       // Focus the active slide in the center
-            perPage: 3,            // Show 3 slides at once
+            type: 'loop',
+            drag: 'free',
+            focus: 'center',
+            perPage: 3, 
             autoScroll: {
-                speed: 1,          // Speed of auto-scrolling
+                speed: 1,
             },
             arrows: false,
             pagination: false,
@@ -21,11 +21,10 @@ const AutoScrollCard: React.FC = () => {
         // Mount Splide with AutoScroll
         splide.mount({ AutoScroll });
 
-        // Cleanup: destroy Splide when the component unmounts
         return () => {
             splide.destroy();
         };
-    }, []);  // Empty dependency array ensures the effect runs only once
+    }, []); 
 
     return (
         <div className="splide h-28 border-t border-b border-black/50 dark:border-white/50 flex items-center w-full">

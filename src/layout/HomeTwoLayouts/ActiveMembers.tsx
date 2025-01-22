@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import img from '../../assets/images/people/people-4.webp';
 import { faFacebookF, faLinkedin, faPinterest, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
@@ -32,7 +31,7 @@ const ActiveMembers: React.FC = () => {
             <header className="w-full flex flex-col lg:flex-row items-start lg:items-end gap-8 justify-between pb-10" data-aos="fade-up" data-aos-delay="0">
                 <div className="md:w-2/3 lg:w-1/2">
                     <h3 className="uppercase text-customRed font-extrabold tracking-widest my-5 font-Oswald text-xl" data-aos="fade-up" data-aos-delay="0" >our active members </h3>
-                    <h1 className="w-auto m-auto text-3xl md:text-5xl xl:text-6xl font-Oswald font-bold leading-loose" data-aos="fade-up" data-aos-delay="100" >Unleash the Power of Technology</h1>
+                    <h1 className="w-auto m-auto text-3xl md:text-5xl xl:text-6xl font-Oswald font-bold leading-loose" data-aos="fade-up" data-aos-delay="0" >Unleash the Power of Technology</h1>
                 </div>
 
                 <div className="w-full lg:w-1/2 text-black/50 dark:text-white/50 leading-relaxed text-lg">

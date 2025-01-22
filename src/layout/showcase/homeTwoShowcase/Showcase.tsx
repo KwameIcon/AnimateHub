@@ -8,13 +8,11 @@ import { faArrowRightLong, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 
 // images
-import shape1 from '../../../assets/images/shape-1.webp';
 import avater1 from '../../../assets/images/people/customers/avatar-1.webp'; 
 import avater2 from '../../../assets/images/people/customers/avatar-2.webp'; 
 import avater3 from '../../../assets/images/people/customers/avatar-3.webp'; 
 import hero5 from '../../../assets/images/others/hero-5.webp';
 import hero6 from '../../../assets/images/others/hero-6.webp';
-import shape2 from '../../../assets/images/shape-2.webp';
 import { Shape1, Shape2, Shape3 } from "../../../assets/images/svg/svg files";
 
 
@@ -81,7 +79,7 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode}) => {
                 <div className="w-full lg:w-[45%] xl:w-[30%] shrink-0 flex items-center justify-center overflow-hidden">
                     <div className="w-full md:w-3/5 lg:w-full h-[600px] bg-gradient-to-t from-customRed to-ebony rounded-tl-full rounded-tr-full relative overflow-hidden">
                         <div className="absolute top-0 left-0 h-[97%] w-[95%] rounded-tl-full rounded-tr-full flex items-end justify-center pb-10 bg-graphiteBlack">
-                            <img src= {hero5} alt="hero picture" className="" />
+                            <img src= {hero5} alt="hero" className="" />
                         </div>
                     </div>
                 </div>
@@ -96,7 +94,7 @@ const Showcase: React.FC<ShowcaseProps> = ({themeMode}) => {
                     <div className="w-full flex flex-col items-center space-y-10">
                         <p className="text-black/80 dark:text-white/60 text-lg leading-loose text-center">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Lorem Ipsum is simply dum text of the printing and typeset</p>
                         <div className="">
-                            <img src= {hero6} alt="hero picture 2" className="animate-swingY" />
+                            <img src= {hero6} alt="hero 2" className="animate-swingY" />
                         </div>
                         <div className="w-full md:w-3/5 flex items-center justify-between gap-5">
                             <div>

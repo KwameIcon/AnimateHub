@@ -3,7 +3,7 @@ import { BackToTop } from "../../components/Commons/backToTop";
 import Footer from "../../layout/footer/Footer";
 import Showcase from "../../layout/showcase/AboutPage/Showcase";
 import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { FAQSDATA } from "../../DATA/FAQs/FAQS";
 
 interface PricingProps {
