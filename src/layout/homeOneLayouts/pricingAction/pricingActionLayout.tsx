@@ -73,7 +73,7 @@ const PricingActionLayout: React.FC = () => {
                                 {card.popular && (
                                     <div className="absolute z-0 top-4 border-none right-0 w-40 h-12 bg-gradient-to-t from-customRed via-customRed text-white to-ebony dark:bg-gradient-to-r dark:from-customRed dark:to-ebony flex items-center justify-center overflow-hidden before:absolute before:z-10 before:-top-1 before:bg-white before:dark:bg-ebony before:w-14 before:h-14 before:-left-10 before:rounded-tl-full before:rounded-bl-full before:rounded-br-full before:rotate-45 uppercase text-lg font-bold">popular</div>
                                 )}
-                                <SecondaryButton className="border border-customRed w-44">
+                                <SecondaryButton className="border border-customRed w-44 cursor-pointer">
                                     <span>select plan</span>
                                     <FontAwesomeIcon icon={faArrowRight} />
                                 </SecondaryButton>

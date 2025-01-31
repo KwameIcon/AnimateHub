@@ -21,7 +21,7 @@ const ServiceTwo: React.FC<ServiceTwoProps> = ({ themeMode }) => {
             <Showcase themeMode={themeMode} page="Service" suffix="Details" />
 
             {/* content */}
-            <section className="w-[95%] m-auto my-16 grid grid-cols-1 place-items-center gap-10 xl:gap-0 lg:flex lg:items-start lg:justify-center">
+            <section className="w-[95%] m-auto my-16 grid grid-cols-1 place-items-center gap-10 xl:gap-5 lg:flex lg:items-start lg:justify-center">
                 <div className="w-full lg:w-4/12">
                     <ServiceSidebar />
                 </div>
