@@ -16,7 +16,7 @@ const SearchBlogCard: React.FC<SearchBlogCardProps> = ({className}) => {
 
 
             <form action="" className="w-full flex items-center justify-center">
-                <input type="search" name="search" id="" placeholder="Search" className="w-10/12 h-16 bg-white dark:bg-ebony rounded-tl rounded-bl px-5" />
+                <input type="search" name="search" id="" placeholder="Search" className="w-10/12 h-16 bg-white dark:bg-ebony rounded-tl outline-none rounded-bl px-5" />
                 <button type="submit" className="w-2/12 text-sm md:text-base h-16 bg-customRed text-white flex items-center justify-center uppercase font-bold rounded-tr rounded-br relative after:absolute after:top-0 after:right-0 after:h-full after:w-0 after:transition-all after:duration-300 after:ease-linear after:bg-customRedDeep hover:after:left-0 hover:after:w-full">
                 <FontAwesomeIcon icon={faSearch} className="relative z-10" />
                 </button>

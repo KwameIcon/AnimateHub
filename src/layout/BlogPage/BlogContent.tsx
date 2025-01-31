@@ -44,7 +44,7 @@ const BlogContent: React.FC = () => {
 
                     <p className='text-black/70 dark:text-white/70 leading-relaxed text-lg'>{blog.Info}</p>
 
-                    <div className='w-40 h-16 border border-customRed rounded flex items-center justify-center gap-3 text-2xl font-Teko cursor-pointer group'>
+                    <div className='w-40 h-16 border border-customRed rounded flex items-center justify-center gap-3 text-xl font-Teko cursor-pointer group'>
                         <span className='uppercase transition-colors duration-300 ease-linear group-hover:text-customRed '>read more</span>
                         <FontAwesomeIcon icon={faPlus} className='text-customRed' />
                     </div>
